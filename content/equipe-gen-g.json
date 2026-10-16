@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-gen-g",
+  "type": "article",
+  "silo": "equipes",
+  "code": "GEN",
+  "region": "Corée du Sud · LCK",
+  "seed": "#1 LCK",
+  "logo": "https://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+  "title": "Gen.G — Équipe Worlds 2026",
+  "meta_title": "Gen.G : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Gen.G aux Worlds 2026 : Corée du Sud · LCK, seed #1 LCK. Historique, effectif et attentes pour la compétition.",
+  "h1": "Gen.G",
+  "intro": "<p class=\"lead\"><strong>Gen.G</strong> représente la corée du sud aux <strong>Worlds 2026</strong> (seed #1 LCK).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png\" alt=\"Logo Gen.G\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Corée du Sud · LCK</span><span class=\"team-seed\">Seed : #1 LCK</span></div></div><h2>Historique</h2><p>Gen.G est l'équipe dominante de la LCK ces dernières saisons. Portée par un effectif de stars (Kiin, Canyon, Chovy, Ruler), elle a enchaîné les titres domestiques et s'impose comme la référence coréenne du moment.</p><h2>Attentes pour les Worlds 2026</h2><p>Tête de série numéro 1 de Corée, Gen.G arrive aux Worlds 2026 avec le statut de grand favori. L'objectif est clair : le titre mondial, rien de moins.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

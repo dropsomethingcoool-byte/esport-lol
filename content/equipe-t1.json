@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-t1",
+  "type": "article",
+  "silo": "equipes",
+  "code": "T1",
+  "region": "Corée du Sud · LCK",
+  "seed": "#3 LCK",
+  "logo": "https://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+  "title": "T1 — Équipe Worlds 2026",
+  "meta_title": "T1 : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe T1 aux Worlds 2026 : Corée du Sud · LCK, seed #3 LCK. Historique, effectif et attentes pour la compétition.",
+  "h1": "T1",
+  "intro": "<p class=\"lead\"><strong>T1</strong> représente la corée du sud aux <strong>Worlds 2026</strong> (seed #3 LCK).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png\" alt=\"Logo T1\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Corée du Sud · LCK</span><span class=\"team-seed\">Seed : #3 LCK</span></div></div><h2>Historique</h2><p>T1 est l'organisation la plus titrée de l'histoire de League of Legends, avec Faker comme capitaine emblématique. Habituée des phases finales internationales, elle reste redoutable quelle que soit sa forme en saison régulière.</p><h2>Attentes pour les Worlds 2026</h2><p>Troisième représentant coréen, T1 aborde les Worlds sans pression du statut de favori mais avec l'expérience et le pedigree d'un champion. Elle peut battre n'importe qui un bon jour.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

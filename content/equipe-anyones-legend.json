@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-anyones-legend",
+  "type": "article",
+  "silo": "equipes",
+  "code": "AL",
+  "region": "Chine · LPL",
+  "seed": "#1 LPL",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Anyone%27s_Legendlogo_std.png",
+  "title": "Anyone's Legend — Équipe Worlds 2026",
+  "meta_title": "Anyone's Legend : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Anyone's Legend aux Worlds 2026 : Chine · LPL, seed #1 LPL. Historique, effectif et attentes pour la compétition.",
+  "h1": "Anyone's Legend",
+  "intro": "<p class=\"lead\"><strong>Anyone's Legend</strong> représente la chine aux <strong>Worlds 2026</strong> (seed #1 LPL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Anyone%27s_Legendlogo_std.png\" alt=\"Logo Anyone's Legend\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Chine · LPL</span><span class=\"team-seed\">Seed : #1 LPL</span></div></div><h2>Historique</h2><p>Anyone's Legend a remporté la LPL 2026 et s'affirme comme la meilleure équipe chinoise du moment. Son effectif mêle jeunes talents et joueurs confirmés.</p><h2>Attentes pour les Worlds 2026</h2><p>Championne de Chine, Anyone's Legend est attendue au sommet. Elle représente la plus grande menace chinoise pour les équipes coréennes.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

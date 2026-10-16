@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-hanwha-life-esports",
+  "type": "article",
+  "silo": "equipes",
+  "code": "HLE",
+  "region": "Corée du Sud · LCK",
+  "seed": "#2 LCK · champion MSI 2026",
+  "logo": "https://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+  "title": "Hanwha Life Esports — Équipe Worlds 2026",
+  "meta_title": "Hanwha Life Esports : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Hanwha Life Esports aux Worlds 2026 : Corée du Sud · LCK, seed #2 LCK. Historique, effectif et attentes pour la compétition.",
+  "h1": "Hanwha Life Esports",
+  "intro": "<p class=\"lead\"><strong>Hanwha Life Esports</strong> représente la corée du sud aux <strong>Worlds 2026</strong> (seed #2 LCK).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png\" alt=\"Logo Hanwha Life Esports\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Corée du Sud · LCK</span><span class=\"team-seed\">Seed : #2 LCK · champion MSI 2026</span></div></div><h2>Historique</h2><p>Hanwha Life Esports a changé de dimension en 2026 en remportant le MSI. Autour de Zeus, Kanavi, Zeka et Gumayusi, l'équipe dispose de l'un des effectifs les plus talentueux au monde.</p><h2>Attentes pour les Worlds 2026</h2><p>Championne du MSI, Hanwha Life est l'un des principaux prétendants au titre. Sa marge sur le haut de tableau en fait un adversaire redouté de tous.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

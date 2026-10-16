@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-furia",
+  "type": "article",
+  "silo": "equipes",
+  "code": "FUR",
+  "region": "Brésil · CBLOL",
+  "seed": "#2 CBLOL · play-in",
+  "logo": "https://static.lolesports.com/teams/FURIA---black.png",
+  "title": "FURIA — Équipe Worlds 2026",
+  "meta_title": "FURIA : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe FURIA aux Worlds 2026 : Brésil · CBLOL, seed #2 CBLOL. Historique, effectif et attentes pour la compétition.",
+  "h1": "FURIA",
+  "intro": "<p class=\"lead\"><strong>FURIA</strong> représente la brésil aux <strong>Worlds 2026</strong> (seed #2 CBLOL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/FURIA---black.png\" alt=\"Logo FURIA\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Brésil · CBLOL</span><span class=\"team-seed\">Seed : #2 CBLOL · play-in</span></div></div><h2>Historique</h2><p>FURIA est une organisation brésilienne reconnue, présente dans plusieurs esports. Sa section League of Legends dispute le play-in des Worlds 2026.</p><h2>Attentes pour les Worlds 2026</h2><p>FURIA doit sortir du play-in pour rejoindre le système suisse. Une qualification marquerait un jalon pour l'organisation.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

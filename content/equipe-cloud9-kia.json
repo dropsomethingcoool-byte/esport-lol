@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-cloud9-kia",
+  "type": "article",
+  "silo": "equipes",
+  "code": "C9",
+  "region": "Amérique du Nord · LCS",
+  "seed": "#3 LCS · play-in",
+  "logo": "https://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
+  "title": "Cloud9 Kia — Équipe Worlds 2026",
+  "meta_title": "Cloud9 Kia : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Cloud9 Kia aux Worlds 2026 : Amérique du Nord · LCS, seed #3 LCS. Historique, effectif et attentes pour la compétition.",
+  "h1": "Cloud9 Kia",
+  "intro": "<p class=\"lead\"><strong>Cloud9 Kia</strong> représente la amérique du nord aux <strong>Worlds 2026</strong> (seed #3 LCS).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png\" alt=\"Logo Cloud9 Kia\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Amérique du Nord · LCS</span><span class=\"team-seed\">Seed : #3 LCS · play-in</span></div></div><h2>Historique</h2><p>Cloud9 est une organisation emblématique nord-américaine, présente au plus haut niveau depuis des années. Elle passe par le play-in cette année.</p><h2>Attentes pour les Worlds 2026</h2><p>Cloud9 Kia doit d'abord sortir du play-in pour rejoindre le système suisse. Une fois qualifiée, elle peut jouer les trouble-fêtes.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

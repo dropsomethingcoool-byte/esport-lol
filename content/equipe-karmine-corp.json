@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-karmine-corp",
+  "type": "article",
+  "silo": "equipes",
+  "code": "KC",
+  "region": "EMEA · LEC",
+  "seed": "#3 LEC · play-in",
+  "logo": "https://static.lolesports.com/teams/1704714951336_KC.png",
+  "title": "Karmine Corp — Équipe Worlds 2026",
+  "meta_title": "Karmine Corp : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Karmine Corp aux Worlds 2026 : EMEA · LEC, seed #3 LEC. Historique, effectif et attentes pour la compétition.",
+  "h1": "Karmine Corp",
+  "intro": "<p class=\"lead\"><strong>Karmine Corp</strong> représente la emea aux <strong>Worlds 2026</strong> (seed #3 LEC).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1704714951336_KC.png\" alt=\"Logo Karmine Corp\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">EMEA · LEC</span><span class=\"team-seed\">Seed : #3 LEC · play-in</span></div></div><h2>Historique</h2><p>Karmine Corp est l'organisation française au plus grand public d'Europe. Portée par une communauté passionnée, elle dispute le play-in des Worlds 2026.</p><h2>Attentes pour les Worlds 2026</h2><p>Karmine Corp vise la qualification pour le système suisse, puis une belle campagne. Son public et son agressivité en font un adversaire à part.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

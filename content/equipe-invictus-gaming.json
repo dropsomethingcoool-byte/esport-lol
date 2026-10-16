@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-invictus-gaming",
+  "type": "article",
+  "silo": "equipes",
+  "code": "IG",
+  "region": "Chine · LPL",
+  "seed": "#4 LPL",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Invictus_Gaminglogo_std.png",
+  "title": "Invictus Gaming — Équipe Worlds 2026",
+  "meta_title": "Invictus Gaming : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Invictus Gaming aux Worlds 2026 : Chine · LPL, seed #4 LPL. Historique, effectif et attentes pour la compétition.",
+  "h1": "Invictus Gaming",
+  "intro": "<p class=\"lead\"><strong>Invictus Gaming</strong> représente la chine aux <strong>Worlds 2026</strong> (seed #4 LPL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Invictus_Gaminglogo_std.png\" alt=\"Logo Invictus Gaming\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Chine · LPL</span><span class=\"team-seed\">Seed : #4 LPL</span></div></div><h2>Historique</h2><p>Invictus Gaming, championne du monde 2018, a réuni un effectif expérimenté autour de TheShy et Rookie. Son vécu des grandes scènes est un atout.</p><h2>Attentes pour les Worlds 2026</h2><p>Quatrième seed chinoise, Invictus Gaming mise sur l'expérience pour déjouer les pronostics. Un adversaire piégeux en système suisse.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

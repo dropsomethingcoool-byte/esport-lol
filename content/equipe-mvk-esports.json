@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-mvk-esports",
+  "type": "article",
+  "silo": "equipes",
+  "code": "MVK",
+  "region": "APAC · LCP",
+  "seed": "#3 LCP · play-in",
+  "logo": "https://static.lolesports.com/teams/1767089709161_White_Logo.png",
+  "title": "MVK Esports — Équipe Worlds 2026",
+  "meta_title": "MVK Esports : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe MVK Esports aux Worlds 2026 : APAC · LCP, seed #3 LCP. Historique, effectif et attentes pour la compétition.",
+  "h1": "MVK Esports",
+  "intro": "<p class=\"lead\"><strong>MVK Esports</strong> représente la apac aux <strong>Worlds 2026</strong> (seed #3 LCP).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1767089709161_White_Logo.png\" alt=\"Logo MVK Esports\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">APAC · LCP</span><span class=\"team-seed\">Seed : #3 LCP · play-in</span></div></div><h2>Historique</h2><p>MVK Esports est une formation vietnamienne issue de la scène de la LCP. Elle décroche sa place aux Worlds via le play-in.</p><h2>Attentes pour les Worlds 2026</h2><p>MVK Esports doit passer le play-in pour rejoindre le système suisse. Une qualification serait déjà un succès pour la structure.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

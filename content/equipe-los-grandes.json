@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-los-grandes",
+  "type": "article",
+  "silo": "equipes",
+  "code": "LOS",
+  "region": "Brésil · CBLOL",
+  "seed": "#1 CBLOL",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/L%C3%98Slogo_std.png",
+  "title": "Los Grandes — Équipe Worlds 2026",
+  "meta_title": "Los Grandes : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Los Grandes aux Worlds 2026 : Brésil · CBLOL, seed #1 CBLOL. Historique, effectif et attentes pour la compétition.",
+  "h1": "Los Grandes",
+  "intro": "<p class=\"lead\"><strong>Los Grandes</strong> représente la brésil aux <strong>Worlds 2026</strong> (seed #1 CBLOL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/L%C3%98Slogo_std.png\" alt=\"Logo Los Grandes\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Brésil · CBLOL</span><span class=\"team-seed\">Seed : #1 CBLOL</span></div></div><h2>Historique</h2><p>Los Grandes a remporté le CBLOL 2026 et représente la meilleure équipe brésilienne. Elle porte les espoirs de la scène sud-américaine.</p><h2>Attentes pour les Worlds 2026</h2><p>Premier seed brésilien, Los Grandes vise à exister face aux cadors et à offrir une belle histoire à sa région.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

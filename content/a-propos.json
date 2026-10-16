@@ -1,0 +1,12 @@
+{
+  "slug": "a-propos",
+  "type": "about",
+  "title": "À propos",
+  "meta_title": "À propos | esport-lol",
+  "meta_description": "esport-lol.com : le suivi de la compétition esport League of Legends et les Worlds.",
+  "h1": "À propos",
+  "intro": "<p class=\"lead\">esport-lol.com suit la compétition esport <strong>League of Legends</strong>, des Worlds au suivi quotidien.</p>",
+  "body": "<p>Notre mission : permettre à tout spectateur de suivre les matchs, les résultats et le classement de la compétition LoL en temps réel.</p>",
+  "date_modified": "2026-10-14",
+  "date_published": "2026-10-14"
+}

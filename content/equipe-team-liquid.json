@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-team-liquid",
+  "type": "article",
+  "silo": "equipes",
+  "code": "TL",
+  "region": "Amérique du Nord · LCS",
+  "seed": "#1 LCS",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Team_Liquidlogo_std.png",
+  "title": "Team Liquid — Équipe Worlds 2026",
+  "meta_title": "Team Liquid : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Team Liquid aux Worlds 2026 : Amérique du Nord · LCS, seed #1 LCS. Historique, effectif et attentes pour la compétition.",
+  "h1": "Team Liquid",
+  "intro": "<p class=\"lead\"><strong>Team Liquid</strong> représente la amérique du nord aux <strong>Worlds 2026</strong> (seed #1 LCS).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Team_Liquidlogo_std.png\" alt=\"Logo Team Liquid\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Amérique du Nord · LCS</span><span class=\"team-seed\">Seed : #1 LCS</span></div></div><h2>Historique</h2><p>Team Liquid est l'organisation la plus titrée d'Amérique du Nord. Autour de CoreJJ et d'un noyau solide, elle domine la scène nord-américaine.</p><h2>Attentes pour les Worlds 2026</h2><p>Premier seed nord-américain, Team Liquid porte les espoirs de sa région. Passer le système suisse serait déjà un bel accomplissement.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

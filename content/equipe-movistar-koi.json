@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-movistar-koi",
+  "type": "article",
+  "silo": "equipes",
+  "code": "MKOI",
+  "region": "EMEA · LEC",
+  "seed": "#2 LEC",
+  "logo": "https://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+  "title": "Movistar KOI — Équipe Worlds 2026",
+  "meta_title": "Movistar KOI : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Movistar KOI aux Worlds 2026 : EMEA · LEC, seed #2 LEC. Historique, effectif et attentes pour la compétition.",
+  "h1": "Movistar KOI",
+  "intro": "<p class=\"lead\"><strong>Movistar KOI</strong> représente la emea aux <strong>Worlds 2026</strong> (seed #2 LEC).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png\" alt=\"Logo Movistar KOI\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">EMEA · LEC</span><span class=\"team-seed\">Seed : #2 LEC</span></div></div><h2>Historique</h2><p>Movistar KOI, née de la fusion KOI–MAD Lions, est une structure espagnole ambitieuse. Son effectif mêle talents ibériques et recrues étrangères.</p><h2>Attentes pour les Worlds 2026</h2><p>Deuxième seed EMEA, Movistar KOI veut confirmer son statut de dauphin européen et viser une qualification pour les phases finales.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

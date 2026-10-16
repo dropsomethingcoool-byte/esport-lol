@@ -1,0 +1,46 @@
+{
+  "home": {
+    "label": "Accueil",
+    "slug": "index"
+  },
+  "silos": [
+    {
+      "label": "Suivi des Worlds",
+      "slug": "planning",
+      "pages": [
+        {
+          "label": "Résultats",
+          "slug": "resultats"
+        },
+        {
+          "label": "Classement",
+          "slug": "classement"
+        }
+      ]
+    },
+    {
+      "label": "Équipes",
+      "slug": "equipes",
+      "pages": []
+    },
+    {
+      "label": "Blog",
+      "slug": "blog",
+      "pages": []
+    }
+  ],
+  "static": [
+    {
+      "label": "Parier sur les Worlds",
+      "slug": "parier-worlds-lol"
+    },
+    {
+      "label": "À propos",
+      "slug": "a-propos"
+    },
+    {
+      "label": "Contact",
+      "slug": "contact"
+    }
+  ]
+}

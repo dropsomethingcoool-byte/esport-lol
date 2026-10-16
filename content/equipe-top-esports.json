@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-top-esports",
+  "type": "article",
+  "silo": "equipes",
+  "code": "TES",
+  "region": "Chine · LPL",
+  "seed": "#3 LPL",
+  "logo": "https://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+  "title": "Top Esports — Équipe Worlds 2026",
+  "meta_title": "Top Esports : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Top Esports aux Worlds 2026 : Chine · LPL, seed #3 LPL. Historique, effectif et attentes pour la compétition.",
+  "h1": "Top Esports",
+  "intro": "<p class=\"lead\"><strong>Top Esports</strong> représente la chine aux <strong>Worlds 2026</strong> (seed #3 LPL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png\" alt=\"Logo Top Esports\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Chine · LPL</span><span class=\"team-seed\">Seed : #3 LPL</span></div></div><h2>Historique</h2><p>Top Esports est une écurie historique de la LPL, emmenée par JackeyLove. Solide collectivement, elle a souvent joué les trouble-fêtes lors des compétitions internationales.</p><h2>Attentes pour les Worlds 2026</h2><p>Troisième seed chinoise, Top Esports arrive avec un statut d'outsider capable de créer la surprise face aux favoris.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

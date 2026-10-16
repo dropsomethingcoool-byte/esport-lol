@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-g2-esports",
+  "type": "article",
+  "silo": "equipes",
+  "code": "G2",
+  "region": "EMEA · LEC",
+  "seed": "#1 LEC",
+  "logo": "https://static.lolesports.com/teams/G2-FullonDark.png",
+  "title": "G2 Esports — Équipe Worlds 2026",
+  "meta_title": "G2 Esports : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe G2 Esports aux Worlds 2026 : EMEA · LEC, seed #1 LEC. Historique, effectif et attentes pour la compétition.",
+  "h1": "G2 Esports",
+  "intro": "<p class=\"lead\"><strong>G2 Esports</strong> représente la emea aux <strong>Worlds 2026</strong> (seed #1 LEC).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/G2-FullonDark.png\" alt=\"Logo G2 Esports\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">EMEA · LEC</span><span class=\"team-seed\">Seed : #1 LEC</span></div></div><h2>Historique</h2><p>G2 Esports est l'organisation européenne la plus titrée, habituée aux finales internationales. Avec BrokenBlade, Perkz et Hans Sama, elle reste la référence EMEA.</p><h2>Attentes pour les Worlds 2026</h2><p>Championne d'Europe, G2 vise au minimum les quarts de finale et espère retrouver une finale mondiale. Le porte-drapeau de l'EMEA.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

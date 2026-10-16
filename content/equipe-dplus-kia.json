@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-dplus-kia",
+  "type": "article",
+  "silo": "equipes",
+  "code": "DK",
+  "region": "Corée du Sud · LCK",
+  "seed": "#4 LCK",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/Dplus_Kialogo_std.png",
+  "title": "Dplus Kia — Équipe Worlds 2026",
+  "meta_title": "Dplus Kia : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Dplus Kia aux Worlds 2026 : Corée du Sud · LCK, seed #4 LCK. Historique, effectif et attentes pour la compétition.",
+  "h1": "Dplus Kia",
+  "intro": "<p class=\"lead\"><strong>Dplus Kia</strong> représente la corée du sud aux <strong>Worlds 2026</strong> (seed #4 LCK).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/Dplus_Kialogo_std.png\" alt=\"Logo Dplus Kia\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Corée du Sud · LCK</span><span class=\"team-seed\">Seed : #4 LCK</span></div></div><h2>Historique</h2><p>Dplus Kia, héritière de DAMWON Gaming (championne du monde 2020), reste une place forte de la LCK. Autour de ShowMaker, elle vise à retrouver les sommets après des saisons irrégulières.</p><h2>Attentes pour les Worlds 2026</h2><p>Quatrième seed coréen, Dplus Kia est une équipe au plafond élevé mais irrégulière. Sa capacité à passer le système suisse dépendra de sa constance.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

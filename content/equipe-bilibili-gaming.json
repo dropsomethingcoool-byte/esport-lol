@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-bilibili-gaming",
+  "type": "article",
+  "silo": "equipes",
+  "code": "BLG",
+  "region": "Chine · LPL",
+  "seed": "#2 LPL",
+  "logo": "https://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+  "title": "Bilibili Gaming — Équipe Worlds 2026",
+  "meta_title": "Bilibili Gaming : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe Bilibili Gaming aux Worlds 2026 : Chine · LPL, seed #2 LPL. Historique, effectif et attentes pour la compétition.",
+  "h1": "Bilibili Gaming",
+  "intro": "<p class=\"lead\"><strong>Bilibili Gaming</strong> représente la chine aux <strong>Worlds 2026</strong> (seed #2 LPL).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png\" alt=\"Logo Bilibili Gaming\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Chine · LPL</span><span class=\"team-seed\">Seed : #2 LPL</span></div></div><h2>Historique</h2><p>Bilibili Gaming est un cador de la LPL depuis plusieurs années, avec des joueurs comme Bin, Knight et Viper. Passée tout près du titre mondial par le passé, elle est rompue aux grands rendez-vous.</p><h2>Attentes pour les Worlds 2026</h2><p>Deuxième seed chinoise, Bilibili Gaming est un candidat sérieux au titre. Son expérience des phases finales est un atout majeur.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

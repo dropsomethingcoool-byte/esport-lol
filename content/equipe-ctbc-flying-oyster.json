@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-ctbc-flying-oyster",
+  "type": "article",
+  "silo": "equipes",
+  "code": "CFO",
+  "region": "APAC · LCP",
+  "seed": "#2 LCP",
+  "logo": "https://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
+  "title": "CTBC Flying Oyster — Équipe Worlds 2026",
+  "meta_title": "CTBC Flying Oyster : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe CTBC Flying Oyster aux Worlds 2026 : APAC · LCP, seed #2 LCP. Historique, effectif et attentes pour la compétition.",
+  "h1": "CTBC Flying Oyster",
+  "intro": "<p class=\"lead\"><strong>CTBC Flying Oyster</strong> représente la apac aux <strong>Worlds 2026</strong> (seed #2 LCP).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.lolesports.com/teams/1656307849320_CFO_Logo.png\" alt=\"Logo CTBC Flying Oyster\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">APAC · LCP</span><span class=\"team-seed\">Seed : #2 LCP</span></div></div><h2>Historique</h2><p>CTBC Flying Oyster est une formation taïwanaise régulière de la LCP, souvent présente aux compétitions internationales.</p><h2>Attentes pour les Worlds 2026</h2><p>Deuxième seed APAC, CTBC Flying Oyster part avec un statut d'outsider. Chaque victoire en système suisse sera une performance.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

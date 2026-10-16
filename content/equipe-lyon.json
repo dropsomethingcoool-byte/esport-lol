@@ -1,0 +1,31 @@
+{
+  "slug": "equipe-lyon",
+  "type": "article",
+  "silo": "equipes",
+  "code": "LYN",
+  "region": "Amérique du Nord · LCS",
+  "seed": "#2 LCS",
+  "logo": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/78/LYON_%282024_American_Team%29logo_std.png",
+  "title": "LYON — Équipe Worlds 2026",
+  "meta_title": "LYON : effectif, historique et attentes aux Worlds 2026",
+  "meta_description": "Fiche équipe LYON aux Worlds 2026 : Amérique du Nord · LCS, seed #2 LCS. Historique, effectif et attentes pour la compétition.",
+  "h1": "LYON",
+  "intro": "<p class=\"lead\"><strong>LYON</strong> représente la amérique du nord aux <strong>Worlds 2026</strong> (seed #2 LCS).</p>",
+  "body": "<div class=\"team-hero\"><img class=\"team-logo\" src=\"https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/78/LYON_%282024_American_Team%29logo_std.png\" alt=\"Logo LYON\" loading=\"lazy\"><div class=\"team-hero-meta\"><span class=\"team-region\">Amérique du Nord · LCS</span><span class=\"team-seed\">Seed : #2 LCS</span></div></div><h2>Historique</h2><p>LYON est une formation nord-américaine en progression, qui a décroché sa place aux Worlds via les playoffs LCS 2026.</p><h2>Attentes pour les Worlds 2026</h2><p>Deuxième seed nord-américain, LYON aborde les Worlds sans pression. Une victoire ou deux suffiraient à marquer les esprits.</p>",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "toutes les équipes des Worlds"
+    },
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "blog",
+      "anchor": "résumés de matchs Worlds"
+    }
+  ],
+  "date_modified": "2026-10-16",
+  "date_published": "2026-10-16"
+}

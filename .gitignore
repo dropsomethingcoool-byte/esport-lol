@@ -1,0 +1,15 @@
+# Secrets
+.ftp.env
+*.env
+
+# Généré (reconstruit à chaque run)
+site/
+
+# Python
+__pycache__/
+*.pyc
+
+# Divers
+.DS_Store
+*.log
+/tmp/
