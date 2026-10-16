@@ -2,11 +2,25 @@
   "slug": "contact",
   "type": "contact",
   "title": "Contact",
-  "meta_title": "Contact | esport-lol",
+  "meta_title": "Contact | esport-lol — suivi des Worlds League of Legends",
   "meta_description": "Contactez l'équipe esport-lol pour toute question sur le suivi de la compétition LoL.",
   "h1": "Contact",
   "intro": "<p class=\"lead\">Une question ou un signalement ? Contactez-nous.</p>",
   "body": "<p>Utilisez le formulaire ou l'adresse e-mail indiquée sur cette page.</p>",
   "date_modified": "2026-10-14",
-  "date_published": "2026-10-14"
+  "date_published": "2026-10-14",
+  "related": [
+    {
+      "slug": "a-propos",
+      "anchor": "À propos d'esport-lol"
+    },
+    {
+      "slug": "index",
+      "anchor": "Suivi des Worlds LoL"
+    },
+    {
+      "slug": "planning",
+      "anchor": "Planning des Worlds LoL"
+    }
+  ]
 }

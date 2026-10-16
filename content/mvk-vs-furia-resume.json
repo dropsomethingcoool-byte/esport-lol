@@ -4,23 +4,27 @@
   "silo": "blog",
   "match_id": "115660588583040710",
   "title": "MVK Esports vs FURIA : résumé du match",
-  "meta_title": "MVK Esports vs FURIA : résumé du match Worlds 2026",
+  "meta_title": "MVK Esports vs FURIA : résumé du match Worlds LoL 2026",
   "meta_description": "Résumé du match MVK Esports vs FURIA aux Worlds 2026 (play-in) : victoire 3-0 et la suite de la compétition pour les deux équipes.",
   "h1": "MVK Esports vs FURIA : résumé du match",
   "intro": "<p class=\"lead\">MVK Esports domine <strong>FURIA 3-0</strong> et prend une option sur la qualification dans le play-in des Worlds 2026.</p>",
   "body": "<h2>Le déroulé de la série</h2><p>La série entre <strong>MVK Esports</strong> et <strong>FURIA</strong> a tourné court : MVK s'impose <strong>3-0</strong>, sans laisser une seule manche à son adversaire.</p><p>Cette victoire nette place MVK en position de force pour la suite du play-in.</p><h2>La suite pour les deux équipes</h2><p><strong>MVK Esports</strong> affrontera <strong>Karmine Corp</strong> au prochain tour, pour une place vers le système suisse.</p><p><strong>FURIA</strong> bascule dans le bas du tableau et devra battre <strong>Cloud9 Kia</strong> pour éviter l'élimination.</p><h2>Revivre le match</h2><p><a href=\"https://www.youtube.com/watch?v=UWBRuboiCXk\" rel=\"noopener\">▶ Revivre le match en intégralité (VOD en-US)</a></p>",
   "related": [
     {
-      "slug": "planning",
-      "anchor": "planning des Worlds"
+      "slug": "equipe-mvk-esports",
+      "anchor": "MVK Esports aux Worlds LoL"
     },
     {
-      "slug": "classement",
-      "anchor": "classement des Worlds"
+      "slug": "equipe-furia",
+      "anchor": "FURIA aux Worlds LoL"
+    },
+    {
+      "slug": "kc-vs-cloud9-resume",
+      "anchor": "Karmine Corp vs Cloud9 : résumé du match"
     },
     {
       "slug": "blog",
-      "anchor": "tous les résumés de matchs"
+      "anchor": "Tous les résumés des Worlds LoL"
     }
   ],
   "date_modified": "2026-10-16",

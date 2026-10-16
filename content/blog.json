@@ -3,11 +3,25 @@
   "type": "hub",
   "silo": "blog",
   "title": "Blog League of Legends — guides, tier lists et actualités",
-  "meta_title": "Blog League of Legends | esport-lol",
+  "meta_title": "Blog Worlds LoL : actualités, guides et résumés | esport-lol",
   "meta_description": "Guides champions, tier lists, builds et actualités League of Legends : le blog esport-lol.",
-  "h1": "Blog LoL",
+  "h1": "Blog Worlds LoL",
   "intro": "<p class=\"lead\">Guides, tier lists, builds et conseils pour progresser sur <strong>League of Legends</strong>.</p>",
   "body": "<p>Retrouvez ici nos guides sur le jeu <strong>League of Legends</strong> : champions, rôles, méta, patchs et lexique.</p><h2>Résumés de matchs</h2><!-- RECAPS_START -->\n<p class=\"recap-item\"><a href=\"/kc-vs-cloud9-resume/\">Karmine Corp vs Cloud9 : résumé du match</a><span class=\"recap-date\">· 2026-10-16</span></p>\n<p class=\"recap-item\"><a href=\"/mvk-vs-furia-resume/\">MVK Esports vs FURIA : résumé du match</a><span class=\"recap-date\">· 2026-10-16</span></p>\n<!-- RECAPS_END --><h2>Derniers guides publiés</h2><p><a href=\"/tier-list-lol/\">Tier list LoL</a> — le classement des champions par rôle et par niveau de puissance.</p><p><a href=\"/runes-league-of-legends/\">Runes League of Legends</a> — le guide complet du système de runes pour composer sa page.</p>",
   "date_modified": "2026-10-16",
-  "date_published": "2026-10-14"
+  "date_published": "2026-10-14",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "Toutes les équipes des Worlds LoL"
+    },
+    {
+      "slug": "planning",
+      "anchor": "Planning des Worlds LoL 2026"
+    },
+    {
+      "slug": "parier-worlds-lol",
+      "anchor": "Parier sur les Worlds LoL"
+    }
+  ]
 }

@@ -3,11 +3,29 @@
   "type": "page",
   "silo": "planning",
   "title": "Classement — Worlds League of Legends",
-  "meta_title": "Classement des Worlds LoL | esport-lol",
+  "meta_title": "Classement des Worlds LoL 2026 : groupes et bilans | esport-lol",
   "meta_description": "Le classement des Worlds League of Legends 2026 : victoires, défaites et éliminations, mis à jour en temps réel dès la fin de chaque match.",
-  "h1": "Classement",
+  "h1": "Classement des Worlds LoL 2026",
   "intro": "<p class=\"lead\">Le <strong>classement des Worlds 2026</strong> League of Legends, mis à jour en temps réel : victoires, défaites et éliminations.</p>",
   "body": "<div id=\"live-standings\" class=\"standings\"></div><p>Le classement des Worlds 2026 est mis à jour <strong>en temps réel</strong> au fil des matchs : victoires, défaites et éliminations de chaque équipe, phase par phase (play-ins, système suisse, phase finale).</p><p><a class=\"pill\" href=\"/planning/\">Voir le planning <span class=\"arrow\">→</span></a><a class=\"pill\" href=\"/resultats/\">Voir les résultats <span class=\"arrow\">→</span></a><a class=\"pill\" href=\"/parier-worlds-lol/\">Parier sur les Worlds <span class=\"arrow\">→</span></a></p>",
   "date_modified": "2026-10-15",
-  "date_published": "2026-10-14"
+  "date_published": "2026-10-14",
+  "related": [
+    {
+      "slug": "planning",
+      "anchor": "Planning des Worlds LoL 2026"
+    },
+    {
+      "slug": "resultats",
+      "anchor": "Résultats des Worlds LoL 2026"
+    },
+    {
+      "slug": "equipes",
+      "anchor": "Toutes les équipes des Worlds LoL"
+    },
+    {
+      "slug": "tier-list-lol",
+      "anchor": "Tier List LoL"
+    }
+  ]
 }

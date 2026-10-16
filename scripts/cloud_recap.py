@@ -22,7 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, "content")
 LIVE_URL = "https://esport-lol.com/live.json"
 DS_URL = "https://api.deepseek.com/chat/completions"
-DS_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-pro")
+DS_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
 LOL_API = "https://esports-api.lolesports.com/persisted/gw"
 LOL_KEY = "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z"
 
