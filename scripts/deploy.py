@@ -41,6 +41,8 @@ def load_creds():
 
 def upload(ftp, local_dir, remote_dir):
     for name in sorted(os.listdir(local_dir)):
+        if name == "live.json":
+            continue  # géré par le cron serveur (live-update.py) — ne jamais écraser
         lp = os.path.join(local_dir, name)
         rp = f"{remote_dir}/{name}".lstrip("/")
         if os.path.isdir(lp):
