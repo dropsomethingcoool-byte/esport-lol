@@ -64,13 +64,19 @@ def main():
             print("<p class=\"muted\">Aucune VOD disponible pour ce match.</p>")
             return 0
         urls = sorted({v["url"] for v in vods})
+
+        def embed(url, title):
+            e = url.replace("/watch?v=", "/embed/")
+            return (f'<div class="vod-embed"><iframe src="{e}" title="{title}" loading="lazy" '
+                    f'allowfullscreen allow="accelerometer; autoplay; clipboard-write; '
+                    f'encrypted-media; gyroscope; picture-in-picture"></iframe></div>')
+
         if len(urls) == 1:
             # VOD complète du match (même vidéo pour toutes les manches)
-            loc = vods[0]["locale"]
-            print(f'<p><a href="{urls[0]}" rel="noopener">▶ Revivre le match en intégralité (VOD {loc})</a></p>')
+            print(embed(urls[0], "Revivre le match (VOD)"))
         else:
-            items = [f'<li>Manche {v["game"]} — <a href="{v["url"]}" rel="noopener">VOD ({v["locale"]})</a></li>' for v in vods]
-            print("<ul>" + "".join(items) + "</ul>")
+            for v in vods:
+                print(embed(v["url"], f"Manche {v['game']} — VOD {v['locale']}"))
     else:
         json.dump({"match_id": mid, "vods": vods}, sys.stdout, ensure_ascii=False, indent=2)
     return 0

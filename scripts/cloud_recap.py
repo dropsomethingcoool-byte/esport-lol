@@ -91,10 +91,10 @@ def fetch_vods_html(match_id):
         uniq = sorted(set(urls))
         if not uniq:
             return ""
-        if len(uniq) == 1:
-            return f'<p><a href="{uniq[0]}" rel="noopener">▶ Revivre le match en intégralité (VOD {loc})</a></p>'
-        items = "".join(f'<li><a href="{u}" rel="noopener">VOD</a></li>' for u in uniq)
-        return f"<ul>{items}</ul>"
+        e = uniq[0].replace("/watch?v=", "/embed/")
+        return (f'<div class="vod-embed"><iframe src="{e}" title="Revivre le match (VOD)" loading="lazy" '
+                f'allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+                f'gyroscope; picture-in-picture"></iframe></div>')
     except Exception:
         return ""
 
