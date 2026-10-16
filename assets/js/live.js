@@ -152,20 +152,26 @@
   setInterval(load, POLL_MS);
   setInterval(renderCountdown, 1000); // tick du compte à rebours
 
-  // Bandeau OTP (header) : état EN DIRECT si un match est en cours
+  // Bandeau « En direct » (site-wide) : affiché uniquement si un match est en cours
   function updateOtpBanner() {
     var banner = document.getElementById("otp-banner");
     if (!banner) return;
-    var live = !!(state && allMatches().some(function (m) {
-      return m.state === "inProgress" && isReal(m);
-    }));
-    banner.classList.toggle("is-live", live);
+    var liveMatch = null;
+    if (state) {
+      var ms = allMatches().filter(isReal).filter(function (m) {
+        return m.state === "inProgress";
+      });
+      liveMatch = ms[0] || null;
+    }
+    if (!liveMatch) { banner.hidden = true; return; }
+    banner.hidden = false;
+    var a = liveMatch.teams[0], b = liveMatch.teams[1];
+    var aw = a.gameWins != null ? a.gameWins : 0;
+    var bw = b.gameWins != null ? b.gameWins : 0;
     var sub = document.getElementById("otp-banner-sub");
+    if (sub) sub.textContent = "En direct : " + (a.code || "?") + " " + aw + " – " + bw + " " + (b.code || "?");
     var cta = document.getElementById("otp-banner-cta");
-    if (sub) sub.textContent = live
-      ? "Un match est en cours — regardez-le en direct"
-      : "Tous les matchs en français · replays quand il n'y a pas de match";
-    if (cta) cta.textContent = live ? "▶ Regarder en direct" : "▶ Voir le stream";
+    if (cta) { cta.textContent = "▶ Regarder en direct"; cta.href = "/"; }
   }
 
   // Bandeau cliquable : déplie un lecteur Twitch OTP en dessous du header

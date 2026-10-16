@@ -400,6 +400,40 @@ main.content a:not(.btn):not(.pill):not(.nav-item):not(.explore-tile):hover {
   align-self: center;
 }
 
+/* ---------- Bandeau « En direct » (site-wide) ---------- */
+.live-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--bg-2);
+  border-bottom: 1px solid rgba(200, 169, 106, 0.28);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text);
+}
+.live-banner[hidden] { display: none; }
+.live-banner-dot {
+  width: 8px; height: 8px; flex: none;
+  border-radius: 50%;
+  background: var(--live);
+  animation: live-pulse 2s ease-in-out infinite;
+}
+.live-banner-text { letter-spacing: 0.6px; color: var(--text); }
+.live-banner-cta {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.18s ease;
+}
+.live-banner-cta:hover { color: var(--gold-2); }
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
 /* ---------- Cartes de match ---------- */
 .match-list { display: flex; flex-direction: column; gap: 12px; margin: 18px 0; }
 .match-card {
