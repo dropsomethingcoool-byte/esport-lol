@@ -2,7 +2,7 @@ name: recap-worlds
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # 07:00 UTC (~08:00 Paris)
+    - cron: '0 7,11,15,19,23 * * *'   # 5 passages/jour : 07:00, 11:00, 15:00, 19:00, 23:00 UTC
   workflow_dispatch:
 
 permissions:

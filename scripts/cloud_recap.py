@@ -177,6 +177,7 @@ def main():
             "intro": art["intro"], "body": art["body"],
             "related": [{"slug": "planning", "anchor": "planning des Worlds"},
                         {"slug": "classement", "anchor": "classement des Worlds"},
+                        {"slug": "resultats", "anchor": "résultats en direct"},
                         {"slug": "blog", "anchor": "tous les résumés"}],
         }
         spec_path = f"/tmp/spec_{m['id']}.json"
