@@ -91,9 +91,11 @@ def compute_standings_from_matches(matches):
             if code in ("TBD", "", None):
                 continue
             r = recs.setdefault(code, {"code": code, "name": t.get("name"), "wins": 0, "losses": 0})
-            if t.get("outcome") == "win":
+            # l'outcome est niché sous 'result' dans les matchs bruts de l'API
+            outcome = (t.get("result") or {}).get("outcome")
+            if outcome == "win":
                 r["wins"] += 1
-            elif t.get("outcome") == "loss":
+            elif outcome == "loss":
                 r["losses"] += 1
     return sorted(recs.values(), key=lambda r: (-r["wins"], r["losses"]))
 
@@ -123,12 +125,90 @@ def build_standings(standings_raw):
                 else:
                     teams = compute_standings_from_matches(matches)
                     if teams:
+                        title = stage_name if sec_name == stage_name else f"{stage_name} — {sec_name}".strip(" —")
                         standings.append({
                             "stage": stage_slug, "stage_name": stage_name,
-                            "title": f"{stage_name} — {sec_name}".strip(" —") or stage_name,
+                            "title": title or stage_name,
                             "teams": teams,
                         })
     return standings
+
+
+def annotate_elimination(standings, stages_out):
+    """Marque 'eliminated: True' les équipes d'une phase terminée qui
+    n'apparaissent dans aucune phase ultérieure (donc éliminées du tournoi)."""
+    slugs = [st["slug"] for st in stages_out]
+    by_slug = {st["slug"]: st.get("matches", []) for st in stages_out}
+    for entry in standings:
+        slug = entry.get("stage")
+        if slug not in slugs:
+            continue
+        idx = slugs.index(slug)
+        stage_matches = by_slug.get(slug, [])
+        # phase terminée ? (tous les matchs completed)
+        if not stage_matches or any(m.get("state") != "completed" for m in stage_matches):
+            continue
+        # codes des équipes présentes dans les phases suivantes
+        later = set()
+        for later_slug in slugs[idx + 1:]:
+            for m in by_slug.get(later_slug, []):
+                for t in m.get("teams", []):
+                    c = t.get("code")
+                    if c not in ("TBD", "", None):
+                        later.add(c)
+        if not later:
+            continue
+        for t in entry.get("teams", []):
+            c = t.get("code")
+            t["eliminated"] = c not in later
+
+
+def enrich_standings_images(standings, all_matches):
+    """Propage l'image (logo) des équipes vers le classement, par code."""
+    img = {}
+    for m in all_matches:
+        for t in m.get("teams", []):
+            c = t.get("code")
+            if c and c not in ("TBD", "") and t.get("image") and c not in img:
+                img[c] = t["image"]
+    for entry in standings:
+        for t in entry.get("teams", []):
+            if not t.get("image") and t.get("code") in img:
+                t["image"] = img[t["code"]]
+
+
+# Tirage au sort du Round 1 suisse (18/10/2026) — override tant que l'API renvoie TBD.
+# match_id -> ((code, name), (code, name), startTime_utc)
+SWISS_R1_DRAW = {
+    "115660540726095005": (("GEN", "Gen.G"), ("IG", "Invictus Gaming"), "2026-10-23T17:00:00Z"),
+    "115660540726095007": (("TL", "Team Liquid"), ("CFO", "CTBC Flying Oyster"), "2026-10-23T18:00:00Z"),
+    "115660540726095009": (("AL", "Anyone's Legend"), ("KC", "Karmine Corp"), "2026-10-23T19:00:00Z"),
+    "115660540726095011": (("G2", "G2 Esports"), ("DK", "Dplus Kia"), "2026-10-23T20:00:00Z"),
+    "115660540726095013": (("HLE", "Hanwha Life Esports"), ("TES", "Top Esports"), "2026-10-23T21:00:00Z"),
+    "115660540726095015": (("LOS", "Los Grandes"), ("T1", "T1"), "2026-10-23T22:00:00Z"),
+    "115660540726095017": (("TSW", "Team Secret Whales"), ("LYN", "LYON"), "2026-10-23T23:00:00Z"),
+    "115660540726095019": (("BLG", "Bilibili Gaming"), ("MKOI", "Movistar KOI"), "2026-10-24T00:00:00Z"),
+}
+
+
+def _draw_team(code, name):
+    return {"name": name, "code": code, "slug": None, "image": None,
+            "outcome": None, "gameWins": 0,
+            "record": {"wins": None, "losses": None}}
+
+
+def apply_swiss_draw(matches):
+    """Injecte le tirage du Round 1 suisse sur les matchs encore TBD."""
+    for m in matches:
+        mid = m.get("id")
+        if mid not in SWISS_R1_DRAW:
+            continue
+        # ne pas écraser si l'API a déjà publié de vraies équipes
+        if any(t.get("code") not in ("TBD", "", None) for t in m.get("teams", [])):
+            continue
+        a, b, start = SWISS_R1_DRAW[mid]
+        m["teams"] = [_draw_team(a[0], a[1]), _draw_team(b[0], b[1])]
+        m["startTime"] = start
 
 
 def main():
@@ -152,6 +232,8 @@ def main():
             stages_out.append({"slug": st.get("slug"), "name": st.get("name"),
                                "matches": matches_out})
 
+    apply_swiss_draw(all_matches)
+
     now = datetime.now(timezone.utc)
 
     upcoming = [m for m in all_matches
@@ -170,6 +252,10 @@ def main():
                and any(t["code"] not in ("TBD", "", None) for t in m["teams"])]
     results.sort(key=lambda m: m.get("startTime") or "", reverse=True)
 
+    standings = build_standings(standings_raw)
+    annotate_elimination(standings, stages_out)
+    enrich_standings_images(standings, all_matches)
+
     live = {
         "updated_at": now.isoformat(),
         "source": "lolesports",
@@ -177,7 +263,7 @@ def main():
         "next_match": next_match,
         "upcoming": upcoming,
         "results": results,
-        "standings": build_standings(standings_raw),
+        "standings": standings,
         "stages": stages_out,
     }
 

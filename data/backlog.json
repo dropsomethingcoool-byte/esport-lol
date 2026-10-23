@@ -1,31 +1,6 @@
 {
   "pages": [
     {
-      "slug": "guide-champions-lol",
-      "label": "Guide champions",
-      "keyword": "guide champion league of legends"
-    },
-    {
-      "slug": "patch-notes-lol",
-      "label": "Patch notes",
-      "keyword": "patch notes league of legends"
-    },
-    {
-      "slug": "builds-lol",
-      "label": "Builds champions",
-      "keyword": "build league of legends"
-    },
-    {
-      "slug": "compteurs-lol",
-      "label": "Compteurs (counters)",
-      "keyword": "counter league of legends"
-    },
-    {
-      "slug": "lexique-lol",
-      "label": "Lexique LoL",
-      "keyword": "lexique league of legends"
-    },
-    {
       "slug": "debuter-lol",
       "label": "Débuter sur LoL",
       "keyword": "débuter league of legends"

@@ -50,6 +50,17 @@ def abs_url(slug):
     return f"{BASE_URL}{url_for(slug)}"
 
 
+def cover_image_url(page):
+    """URL JPG de la couverture d'article (og:image / JSON-LD), ou None.
+    Les réseaux sociaux ne lisent pas le webp -> on renvoie la version .jpg."""
+    m = re.search(r'<img[^>]*class="article-cover"[^>]*src="([^"]+)"', page.get("body", ""))
+    if not m:
+        return None
+    src = m.group(1)
+    url = src if src.startswith("http") else BASE_URL + src
+    return url.rsplit(".webp", 1)[0] + ".jpg"
+
+
 # ---------------------------------------------------------------------------
 # Navigation
 # ---------------------------------------------------------------------------
@@ -64,9 +75,10 @@ def build_nav(nav):
                 f'<a href="{url_for(p["slug"])}">{p["label"]}</a>'
                 for p in silo["pages"]
             )
+            hub_label = silo.get("hub_label") or f"Tout {silo['label'].lower()}"
             parts.append(
                 f'<div class="nav-item has-children">{silo["label"]}'
-                f'<div class="nav-dropdown"><a href="{url_for(silo["slug"])}">Tout {silo["label"].lower()}</a>'
+                f'<div class="nav-dropdown"><a href="{url_for(silo["slug"])}">{hub_label}</a>'
                 f"{children}</div></div>"
             )
         else:
@@ -163,10 +175,35 @@ def build_jsonld(page):
     if ptype == "home":
         data = {
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "esport-lol",
-            "url": f"{BASE_URL}/",
-            "inLanguage": "fr-FR",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "esport-lol",
+                    "url": f"{BASE_URL}/",
+                    "inLanguage": "fr-FR",
+                },
+                {
+                    "@type": "SportsEvent",
+                    "name": "Worlds 2026 — League of Legends",
+                    "description": "Championnat du monde de League of Legends 2026 : planning, résultats et classement.",
+                    "startDate": "2026-10-15",
+                    "endDate": "2026-11-05",
+                    "eventStatus": "https://schema.org/EventScheduled",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                    "location": {
+                        "@type": "Place",
+                        "name": "Allen (Texas)",
+                        "address": {"@type": "PostalAddress", "addressLocality": "Allen", "addressRegion": "Texas", "addressCountry": "US"},
+                    },
+                    "organizer": {
+                        "@type": "Organization",
+                        "name": "Riot Games",
+                        "url": "https://www.riotgames.com",
+                    },
+                    "url": f"{BASE_URL}/",
+                    "inLanguage": "fr-FR",
+                },
+            ],
         }
     elif ptype in ("comparatif", "article"):
         data = {
@@ -184,6 +221,28 @@ def build_jsonld(page):
             "mainEntityOfPage": abs_url(page["slug"]),
             "inLanguage": "fr-FR",
         }
+        cover = cover_image_url(page)
+        if cover:
+            data["image"] = cover
+        faq = page.get("faq")
+        if faq:
+            data = {
+                "@context": "https://schema.org",
+                "@graph": [
+                    data,
+                    {
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": q["question"],
+                                "acceptedAnswer": {"@type": "Answer", "text": q["answer"]},
+                            }
+                            for q in faq
+                        ],
+                    },
+                ],
+            }
     elif ptype == "about":
         data = {
             "@context": "https://schema.org",
@@ -249,6 +308,41 @@ def inject_pro_cta(body, page):
 
 
 # ---------------------------------------------------------------------------
+# Table des matières (auto) pour les articles longs
+# ---------------------------------------------------------------------------
+def build_toc(body):
+    """Génère une TOC ancrée depuis les H2, si le body a au moins 3 H2."""
+    hs = re.findall(r"<h2[^>]*>(.*?)</h2>", body, flags=re.S)
+    if len(hs) < 3:
+        return ""
+    items = []
+    for i, h in enumerate(hs):
+        text = re.sub(r"<[^>]+>", "", h).strip()
+        if not text:
+            continue
+        slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+        items.append(f'<li><a href="#{slug}">{text}</a></li>')
+    if not items:
+        return ""
+    return (
+        '<nav class="toc" aria-label="Sommaire">'
+        '<span class="toc-title">Sommaire</span>'
+        f'<ol>{"".join(items)}</ol></nav>'
+    )
+
+
+def add_heading_ids(body):
+    """Ajoute un id ancré aux H2 (pour la TOC)."""
+    def repl(m):
+        attrs = m.group(1)
+        inner = m.group(2)
+        text = re.sub(r"<[^>]+>", "", inner).strip()
+        slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+        return f'<h2{attrs} id="{slug}">{inner}</h2>'
+    return re.sub(r"<h2([^>]*)>(.*?)</h2>", repl, body, flags=re.S)
+
+
+# ---------------------------------------------------------------------------
 # Main content assembly
 # ---------------------------------------------------------------------------
 def build_main(page, nav):
@@ -264,6 +358,12 @@ def build_main(page, nav):
     body = page.get("body", "")
     if ptype == "comparatif":
         body = inject_pro_cta(body, page)
+
+    # Table des matières pour les articles longs (seulement les articles blog)
+    if ptype == "article" and len(re.findall(r"<h2[^>]*>", body)) >= 3:
+        body = add_heading_ids(body)
+        toc = build_toc(body)
+        body = toc + body
 
     return (
         '<main class="content">'
@@ -288,10 +388,13 @@ def render(page, nav):
     with open(TEMPLATE_PATH, "r", encoding="utf-8") as f:
         tpl = f.read()
 
+    og_image = cover_image_url(page) or f"{BASE_URL}/assets/img/og-image.png"
+
     replacements = {
         "__META_TITLE__": page.get("meta_title", page.get("title", "")),
         "__META_DESC__": page.get("meta_description", ""),
         "__CANONICAL__": abs_url(page["slug"]),
+        "__OG_IMAGE__": og_image,
         "__JSONLD__": build_jsonld(page),
         "__NAV__": build_nav(nav),
         "__MAIN__": build_main(page, nav),
@@ -343,6 +446,12 @@ def build_htaccess():
     content = (
         "# Redirections permanentes (anciennes URLs)\n"
         "RedirectMatch 301 ^/paris(/.*)?$ /parier-worlds-lol/\n"
+        "\n"
+        "# Fichiers racine : slash final -> sans slash (évite les 404 des crawlers)\n"
+        "RedirectMatch 301 ^/([^/]+\\.[A-Za-z0-9]+)/$ /$1\n"
+        "\n"
+        "# Lien affilié BetNinja (go/lol -> trackeur partenaire)\n"
+        "RedirectMatch 302 ^/go/lol$ https://media.betninjapartners.com/redirect.aspx?pid=4008&bid=1497\n"
     )
     with open(os.path.join(SITE_DIR, ".htaccess"), "w", encoding="utf-8") as f:
         f.write(content)

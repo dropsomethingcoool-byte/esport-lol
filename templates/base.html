@@ -13,6 +13,13 @@
   <meta property="og:title" content="__META_TITLE__">
   <meta property="og:description" content="__META_DESC__">
   <meta property="og:url" content="__CANONICAL__">
+  <meta property="og:image" content="__OG_IMAGE__">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="__META_TITLE__">
+  <meta name="twitter:description" content="__META_DESC__">
+  <meta name="twitter:image" content="__OG_IMAGE__">
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
@@ -22,21 +29,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    /* Règle de portail — masque les CTA affiliés uniquement pour « Paris + desktop ».
+       Mobile : CTA toujours visibles. Desktop : géolocalisation IP (cache localStorage). */
+    (function () {
+      function isMobile() {
+        return /Mobi|Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+      try {
+        if (isMobile()) return;
+        var cached = null;
+        try { cached = localStorage.getItem('cta_blocked'); } catch (e) {}
+        if (cached === '1') { document.documentElement.classList.add('cta-blocked'); return; }
+        if (cached === '0') return;
+        fetch('/geo.php', { cache: 'no-store' })
+          .then(function (r) { return r.json(); })
+          .then(function (g) {
+            var city = (g && g.city) ? String(g.city).toLowerCase() : '';
+            var region = (g && g.region) ? String(g.region).toLowerCase() : '';
+            var isParis = city === 'paris'
+              || region.indexOf('île-de-france') >= 0
+              || region.indexOf('ile-de-france') >= 0;
+            try { localStorage.setItem('cta_blocked', isParis ? '1' : '0'); } catch (e) {}
+            if (isParis) document.documentElement.classList.add('cta-blocked');
+          })
+          .catch(function () { /* échec géoloc : on laisse les CTA visibles */ });
+      } catch (e) {}
+    })();
+  </script>
   __JSONLD__
 </head>
 <body>
-  <div id="otp-banner" class="live-banner" hidden>
-    <span class="live-banner-dot" aria-hidden="true"></span>
-    <span id="otp-banner-sub" class="live-banner-text">En direct</span>
-    <a id="otp-banner-cta" class="live-banner-cta" href="/">▶ Regarder en direct</a>
-  </div>
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand">
-        <svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-          <path d="M16 1.5 L30 10.5 L16 30 L2 10.5 Z" fill="#c8a96a"/>
-          <path d="M16 1.5 L22 10.5 L16 30 L10 10.5 Z" fill="rgba(0,0,0,0.30)"/>
-        </svg>
+        <img class="brand-mark" src="/assets/img/logo.webp" width="40" height="41" alt="esport-lol.com">
         <span class="brand-text">
           <span class="brand-name">esport<span class="accent">-</span>lol</span>
           <span class="tagline">Suivi des Worlds · League of Legends</span>
@@ -44,6 +71,14 @@
       </a>
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
       <nav class="site-nav" aria-label="Navigation principale">__NAV__</nav>
+      <div class="cta-affiliate header-cta">
+        <a class="cta-btn" href="/parier-worlds-lol/" data-go="L2dvL2xvbA==" rel="nofollow sponsored noopener" target="_blank">Parier <span class="cta-arrow">→</span></a>
+      </div>
+    </div>
+    <div id="otp-banner" class="live-banner" hidden>
+      <span class="live-banner-dot" aria-hidden="true"></span>
+      <span id="otp-banner-sub" class="live-banner-text"></span>
+      <a id="otp-banner-cta" class="live-banner-cta" href="/">▶ Regarder en direct</a>
     </div>
   </header>
 
@@ -54,10 +89,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="brand">
-            <svg class="brand-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-              <path d="M16 1.5 L30 10.5 L16 30 L2 10.5 Z" fill="#c8a96a"/>
-              <path d="M16 1.5 L22 10.5 L16 30 L10 10.5 Z" fill="rgba(0,0,0,0.30)"/>
-            </svg>
+            <img class="brand-mark" src="/assets/img/logo.webp" width="34" height="35" alt="esport-lol.com">
             <span class="brand-text">
               <span class="brand-name">esport<span class="accent">-</span>lol</span>
               <span class="tagline">Suivi des Worlds · League of Legends</span>
@@ -73,6 +105,14 @@
       </div>
     </div>
   </footer>
+
+  <div class="cta-affiliate cta-sticky">
+    <div class="cta-sticky-text">
+      <span class="cta-sticky-title">Parier sur les Worlds LoL 2026</span>
+      <span class="cta-sticky-sub">Bonus de dépôt 75&nbsp;% jusqu'à 500&nbsp;€ · BetNinja</span>
+    </div>
+    <a class="cta-btn" href="/parier-worlds-lol/" data-go="L2dvL2xvbA==" rel="nofollow sponsored noopener" target="_blank">Parier <span class="cta-arrow">→</span></a>
+  </div>
 
   <script src="/assets/js/live.js" defer></script>
   <script>
@@ -97,6 +137,19 @@
         els.forEach(function(el){ io.observe(el); });
       } else {
         els.forEach(function(el){ el.classList.add('is-visible'); });
+      }
+    })();
+  </script>
+  <script>
+    // Obfuscation des liens affiliés : restaure le href réel depuis data-go (base64).
+    (function () {
+      var links = document.querySelectorAll('a[data-go]');
+      for (var i = 0; i < links.length; i++) {
+        (function (a) {
+          try {
+            a.setAttribute('href', atob(a.getAttribute('data-go')));
+          } catch (e) { /* garde le fallback (/parier-worlds-lol/) */ }
+        })(links[i]);
       }
     })();
   </script>

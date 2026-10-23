@@ -27,13 +27,24 @@
       "label": "Blog",
       "slug": "blog",
       "pages": []
+    },
+    {
+      "label": "Paris esport",
+      "slug": "parier-worlds-lol",
+      "hub_label": "Parier sur lol",
+      "pages": [
+        {
+          "label": "Bonus BetNinja",
+          "slug": "bonus-betninja"
+        },
+        {
+          "label": "Pronostics Worlds",
+          "slug": "pronostics-worlds-lol"
+        }
+      ]
     }
   ],
   "static": [
-    {
-      "label": "Parier sur les Worlds",
-      "slug": "parier-worlds-lol"
-    },
     {
       "label": "À propos",
       "slug": "a-propos"

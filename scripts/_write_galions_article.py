@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""Crée l'article « Galions remporte l'EMEA Masters 2026 Summer » + l'ajoute au blog."""
+import json
+
+ROOT = "/Users/charlesploteau/esport-lol-cleanup-20261015_161248/workdir"
+TODAY = "2026-10-23"
+
+article = {
+    "slug": "galions-emea-masters-2026",
+    "type": "article",
+    "silo": "blog",
+    "title": "Galions remporte l'EMEA Masters 2026 Summer",
+    "meta_title": "Galions champion EMEA Masters 2026 : victoire face à Solary",
+    "meta_description": "Galions s'impose 3-2 face à Solary en finale de l'EMEA Masters 2026 Summer à Paris. Parcours, roster et titre de champion pour l'équipe française.",
+    "h1": "Galions remporte l'EMEA Masters 2026 Summer",
+    "intro": "<p class=\"lead\">Le titre de champion revient à <strong>Galions</strong> : l'équipe française a dominé Solary 3-2 en finale de l'EMEA Masters 2026 Summer, le 22 octobre à la Paris Expo Porte de Versailles.</p>",
+    "body": (
+        "<h2>La finale face à Solary</h2>"
+        "<h3>Un Bo5 indécis</h3>"
+        "<p>La finale a opposé Galions à Solary le 22 octobre. Au terme d'une série accrochée, Galions s'est imposé <strong>3-2</strong> pour décrocher le titre.</p>"
+        "<p>Les cinq manches se sont jouées en <strong>27 à 37 minutes</strong> chacune. C'est la seule série du parcours où Galions a été poussé jusqu'à la manche décisive.</p>"
+        "<h3>Harpoon élu MVP de la finale</h3>"
+        "<p>Le botlaner Harpoon a été désigné <strong>MVP de la finale</strong>. Sa série sur la ligne du bas a fait basculer les manches les plus disputées.</p>"
+        "<h2>Le parcours de Galions</h2>"
+        "<h3>Un sans-faute jusqu'à la finale</h3>"
+        "<p>Avant la finale, Galions n'avait concédé aucune série. En huitièmes, l'équipe a écarté BIG sur un net <strong>3-0</strong> le 6 octobre.</p>"
+        "<p>En quart de finale, Galions a dominé <strong>Kaufland Hangry Knights</strong> 3-0 le 9 octobre, sans perdre une seule manche.</p>"
+        "<h3>Une demi-finale maîtrisée</h3>"
+        "<p>En demi-finale, le 13 octobre, Galions a éliminé <strong>MKOI Fénix</strong> sur un nouveau 3-0. Trois séries disputées, aucune manche concédée avant la finale.</p>"
+        "<h2>Le roster champion</h2>"
+        "<h3>Un cinq français expérimenté</h3>"
+        "<p>L'effectif s'appuie sur Carlsen en toplane et Thayger en jungle, la <strong>colonne vertébrale</strong> de l'équipe depuis plusieurs splits.</p>"
+        "<p>Sur les lignes, <strong>OMON</strong> occupe le mid, Harpoon le bot et Zoelys le support. Un groupe rodé qui joue ensemble depuis le début de saison.</p>"
+        "<h3>Un staff solide</h3>"
+        "<p>Le staff est mené par <strong>xani</strong> au poste de coach principal, épaulé par Karot et l'analyste Mascode.</p>"
+        "<h2>Galions, une référence française</h2>"
+        "<h3>L'héritage GamersOrigin</h3>"
+        "<p>Galions est une organisation française basée à <strong>Paris</strong>, née de la collaboration entre Team GO et le créateur Sixen. Le club est l'héritier de la structure GamersOrigin.</p>"
+        "<p>Déjà <strong>vainqueur du split de printemps</strong>, Galions confirme sa place parmi les meilleures équipes de l'écosystème ERL européen.</p>"
+        "<h3>Le format du tournoi</h3>"
+        "<p>L'EMEA Masters 2026 Summer, organisé par Riot Games, réunissait <strong>43 équipes</strong> issues des ligues régionales européennes.</p>"
+        "<p>Le tournoi s'est déroulé du <strong>21 septembre au 22 octobre</strong>, avec la phase finale jouée en présentiel à Paris.</p>"
+        "<h2>La suite pour Galions</h2>"
+        "<h3>Un titre de prestige européen</h3>"
+        "<p>Ce sacre couronne le troisième split de la saison 2026. Un titre qui place Galions au sommet des <strong>EMEA Masters</strong> et renforce son statut de référence française.</p>"
+        "<h3>Suivre l'actualité LoL</h3>"
+        "<p>Retrouvez les autres <strong>actualités LoL</strong> sur le <a href=\"/blog/\">blog esport-lol</a> et le suivi des <a href=\"/tirage-au-sort-worlds-2026/\">Worlds 2026</a>.</p>"
+    ),
+    "related": [
+        {"slug": "blog", "anchor": "tous les articles du blog"},
+        {"slug": "tirage-au-sort-worlds-2026", "anchor": "tirage au sort du système suisse"},
+    ],
+    "date_modified": TODAY,
+    "date_published": TODAY,
+}
+
+with open(f"{ROOT}/content/galions-emea-masters-2026.json", "w", encoding="utf-8") as f:
+    json.dump(article, f, ensure_ascii=False, indent=2)
+print("✓ content/galions-emea-masters-2026.json")
+
+# --- Ajout au blog (section Actualités) ---
+bp = f"{ROOT}/content/blog.json"
+blog = json.load(open(bp, encoding="utf-8"))
+body = blog["body"]
+
+body = body.replace("<h2>Actualités des Worlds</h2>", "<h2>Actualités</h2>")
+
+news_item = ('<p><a href="/galions-emea-masters-2026/">Galions remporte l\'EMEA Masters 2026 Summer</a>'
+             ' — victoire 3-2 face à Solary en finale à Paris.</p>')
+
+anchor = '<p><a href="/tirage-au-sort-worlds-2026/">'
+if "/galions-emea-masters-2026/" not in body:
+    body = body.replace(anchor, news_item + anchor, 1)
+blog["body"] = body
+blog["date_modified"] = TODAY
+with open(bp, "w", encoding="utf-8") as f:
+    json.dump(blog, f, ensure_ascii=False, indent=2)
+print("✓ content/blog.json (Actualités + Galions)")

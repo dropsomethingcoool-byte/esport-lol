@@ -49,14 +49,25 @@
     return '<span class="score">' + (a.gameWins) + ' – ' + (b.gameWins) + '</span>';
   }
 
+  function crest(t, cls) {
+    // Logo de l'équipe si dispo (réécrit http:// -> https:// pour éviter le mixed content),
+    // sinon retombe sur le code texte (déjà le cas avant).
+    var u = t && t.image;
+    if (u) {
+      u = String(u).replace(/^http:\/\//i, "https://");
+      return '<img class="' + cls + '" src="' + esc(u) + '" alt="' + esc(t.code || "") + '" loading="lazy" referrerpolicy="no-referrer">';
+    }
+    return '<span class="' + cls + '">' + esc(t.code || "?") + '</span>';
+  }
+
   function matchCard(m) {
     var a = m.teams[0], b = m.teams[1];
     return '<div class="match-card">' +
       '<div class="match-meta">' + badge(m) + '<span class="match-time">' + esc(fmtTime(m.startTime)) + '</span></div>' +
       '<div class="match-row">' +
-        '<div class="team"><div class="team-crest">' + esc(a.code || "?") + '</div><span class="team-name">' + esc(a.name || "") + '</span></div>' +
+        '<div class="team">' + crest(a, "team-crest") + '<span class="team-name">' + esc(a.name || "") + '</span></div>' +
         '<div class="match-vs">' + score(m) + '</div>' +
-        '<div class="team team-right"><span class="team-name">' + esc(b.name || "") + '</span><div class="team-crest">' + esc(b.code || "?") + '</div></div>' +
+        '<div class="team team-right"><span class="team-name">' + esc(b.name || "") + '</span>' + crest(b, "team-crest") + '</div>' +
       '</div></div>';
   }
 
@@ -105,9 +116,10 @@
       var w = t.wins == null ? "–" : t.wins;
       var l = t.losses == null ? "–" : t.losses;
       var bilan = (w === "–" || l === "–") ? "–" : (w + "-" + l);
+      var elim = t.eliminated ? ' <span class="s-elim">éliminé</span>' : '';
       return '<tr>' +
         '<td class="s-rank">' + (i + 1) + '</td>' +
-        '<td class="s-team"><span class="s-crest">' + esc(t.code || "?") + '</span><span class="s-name">' + esc(t.name || "") + '</span></td>' +
+        '<td class="s-team">' + crest(t, "s-crest") + '<span class="s-name">' + esc(t.name || "") + elim + '</span></td>' +
         '<td class="s-num">' + w + '</td>' +
         '<td class="s-num">' + l + '</td>' +
         '<td class="s-num s-bilan">' + bilan + '</td>' +
@@ -163,15 +175,18 @@
       });
       liveMatch = ms[0] || null;
     }
-    if (!liveMatch) { banner.hidden = true; return; }
-    banner.hidden = false;
-    var a = liveMatch.teams[0], b = liveMatch.teams[1];
-    var aw = a.gameWins != null ? a.gameWins : 0;
-    var bw = b.gameWins != null ? b.gameWins : 0;
     var sub = document.getElementById("otp-banner-sub");
-    if (sub) sub.textContent = "En direct : " + (a.code || "?") + " " + aw + " – " + bw + " " + (b.code || "?");
     var cta = document.getElementById("otp-banner-cta");
-    if (cta) { cta.textContent = "▶ Regarder en direct"; cta.href = "/"; }
+    if (liveMatch) {
+      banner.hidden = false;
+      var a = liveMatch.teams[0], b = liveMatch.teams[1];
+      var aw = a.gameWins != null ? a.gameWins : 0;
+      var bw = b.gameWins != null ? b.gameWins : 0;
+      if (sub) sub.textContent = "En direct : " + (a.code || "?") + " " + aw + " – " + bw + " " + (b.code || "?");
+      if (cta) { cta.textContent = "▶ Regarder en direct"; cta.href = "/"; }
+    } else {
+      banner.hidden = true;
+    }
   }
 
   // Bandeau cliquable : déplie un lecteur Twitch OTP en dessous du header

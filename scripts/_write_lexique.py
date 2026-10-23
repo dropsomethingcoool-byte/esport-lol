@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+"""Écrit content/lexique-lol.json (page evergreen « lexique League of Legends »)."""
+import json
+import os
+import re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+H = []
+
+
+def h2(t):
+    H.append(f"<h2>{t}</h2>")
+
+
+def h3(t):
+    H.append(f"<h3>{t}</h3>")
+
+
+def p(t):
+    H.append(f"<p>{t}</p>")
+
+
+h2("À quoi sert un lexique League of Legends")
+h3("Les mots du jeu que personne n'explique")
+p("Un <strong>lexique league of legends</strong> sert d'abord à comprendre les autres joueurs. Un débutant qui rejoint une partie entend « poke », « flash » ou « freeze » sans recevoir de définition, et perd des informations utiles à chaque seconde.")
+h3("Un vocabulaire qui évolue avec les patchs")
+p("Le vocabulaire mélange trois sources : les termes officiels du client de jeu, les abréviations héritées du jeu compétitif et l'argot des serveurs francophones. Une même action peut donc porter <strong>trois noms</strong> différents selon l'interlocuteur.")
+p("Certains mots <strong>disparaissent</strong> quand le système qu'ils décrivaient est retiré du jeu. Ce lexique regroupe les termes encore employés en 2026, classés par thème. Pour les objets et les runes, le <a href=\"/builds-lol/\">guide des builds LoL</a> complète chaque définition.")
+
+h2("Le vocabulaire de la carte et des rôles")
+h3("Les lignes et les zones de la Faille")
+p("La <strong>top</strong> désigne la voie du haut, la mid celle du milieu et la bot celle du bas. La bot accueille deux joueurs : le tireur et son support. Le jungler, lui, circule entre les camps de monstres.")
+p("La <strong>rivière</strong> sépare les deux camps et abrite les objectifs majeurs. Le Baron apparaît à 20 minutes, les dragons dès 5 minutes. Le Nexus reste l'objectif final : détruire celui de l'adversaire termine la partie.")
+h3("Les cinq rôles et leurs surnoms")
+p("Le <strong>top</strong> joue souvent un combattant ou un tank en duel prolongé. Le jungle crée de la pression par des attaques surprises appelées ganks. Le mid apporte des dégâts magiques ou une mobilité qui lui permet de rejoindre les côtés.")
+p("Le <strong>ADC</strong> — pour Attack Damage Carry — est le tireur à distance de la bot. Le support le protège, pose la vision et déclenche les combats. Les fiches du <a href=\"/equipes/\">hub des équipes</a> montrent ces rôles en version compétition.")
+
+h2("Les termes de combat et de laning")
+h3("Poke, all-in et trade")
+p("Le <strong>poke</strong> consiste à user l'adversaire à distance sans s'engager. L'all-in est l'inverse : un engagement total où l'un des deux camps doit mourir. Le trade désigne un échange de coups court et calculé en lane.")
+p("Un joueur qui <strong>bait</strong> attire l'adversaire dans un piège, souvent près de son jungler. Une « disengage » casse un combat engagé, par un ralentissement ou une zone de contrôle. Ces notions se retrouvent dans le <a href=\"/compteurs-lol/\">guide des counters LoL</a>.")
+h3("Freeze, push et proxy")
+p("Le <strong>freeze</strong> fige la vague de sbires juste devant sa tourelle pour priver l'adversaire de farm. Le push pousse au contraire la vague vers le camp adverse afin de libérer du temps.")
+p("Le <strong>proxy</strong> consiste à farmer derrière la tourelle ennemie, entre deux vagues. Le wave management regroupe ces techniques : il pèse souvent plus lourd qu'un kill isolé.")
+h3("Gank, roam et split push")
+p("Un <strong>gank</strong> est une attaque surprise d'une ligne par le jungler. Le roam décrit un déplacement hors de sa ligne pour créer un surnombre ailleurs. Le counter-gank anticipe le gank adverse pour le retourner.")
+p("Le <strong>split push</strong> repose sur un joueur qui pousse seul une voie pendant que son équipe occupe l'adversaire. Cette pression constante ouvre des objectifs gratuits.")
+
+h2("Les abréviations que tout le monde tape en partie")
+h3("CC, AoE, DoT et DPS")
+p("<strong>CC</strong> signifie crowd control, soit tout effet qui empêche d'agir : étourdissement, ralentissement, projection. AoE désigne une zone d'effet, DoT des dégâts sur la durée.")
+p("<strong>DPS</strong> mesure les dégâts par seconde. Burst qualifie au contraire des dégâts concentrés en un instant. Un champion de burst tue vite, un champion de DPS gagne les combats longs.")
+h3("HP, MP, AD, AP et MR")
+p("<strong>HP</strong> correspond aux points de vie, MP au mana. AD désigne les dégâts d'attaque, AP la puissance. MR est la résistance magique, opposée aux dégâts des sorts.")
+p("Ces statistiques se lisent sur la <strong>fiche</strong> du champion dans le client. Les éclats de runes les modifient légèrement, ce que détaille le <a href=\"/runes-league-of-legends/\">guide des runes League of Legends</a>.")
+h3("Baron, Nash et Drake")
+p("Le <strong>Baron</strong> est aussi appelé Nashor ou Nash. Les dragons sont surnommés Drake. L'Elder désigne le dragon ancestral, qui donne un avantage décisif.")
+p("L'<strong>Herald</strong> — héraut de la Faille — apparaît avant le Baron et sert à détruire les tourelles rapidement. Les acronymes restent stables d'une saison à l'autre.")
+
+h2("Le lexique de la draft et de la méta")
+h3("Pick, ban, blind et counter pick")
+p("Un <strong>pick</strong> est un champion choisi, un ban un champion retiré de la sélection. Le blind pick expose un champion vulnérable aux compteurs. Le counter pick choisit précisément le champion qui bat un adversaire déjà visible.")
+p("La <strong>draft</strong> désigne l'ensemble de la phase de sélection. Une draft dite « scaling » mise sur la fin de partie, une draft « early » cherche à conclure en vingt minutes.")
+h3("Méta, tier et patch")
+p("<strong>Méta</strong> désigne l'ensemble des stratégies jugées optimales à un instant donné. Le terme vient de « metagame ». Un champion « méta » est donc simplement très joué dans la configuration actuelle.")
+p("Les <strong>patch notes</strong> modifient régulièrement les champions. Un suivi à jour aide à éviter de jouer un personnage affaibli, comme le montre la <a href=\"/tier-list-lol/\">tier list LoL</a> actualisée.")
+h3("OTP, flex et pocket pick")
+p("<strong>OTP</strong> signifie one trick pony : un joueur qui ne joue qu'un seul champion. Un flex pick peut occuper plusieurs rôles sans perdre en efficacité. Le pocket pick est un champion de réserve, rarement joué en ranked.")
+p("Un <strong>smurf</strong> est un compte secondaire d'un joueur expérimenté. Il fausse le niveau affiché et explique certaines défaites surprenantes.")
+
+h2("Les expressions francophones et l'argot esport")
+h3("Les verbes du serveur français")
+p("« Farm » signifie tuer des sbires pour gagner de l'or, « feed » donner des kills à l'adversaire. « Flamer » revient à insulter un coéquipier. « Tryhard » désigne un joueur qui <strong>joue</strong> à fond, sans fantaisie.")
+p("« Backdoor » désigne une attaque du Nexus à travers une voie vide. « Dive » signifie attaquer sous la tourelle adverse. Le <strong>jungle tracking</strong>, lui, consiste à deviner la position du jungler ennemi.")
+h3("Les acronymes des discussions en ligne")
+p("<strong>GG</strong> signifie good game, AFK away from keyboard, INT intentional feeding. KS désigne le vol d'un kill réservé à un coéquipier. Ces termes restent familiers aux joueurs francophones.")
+p("<strong>GLHF</strong> et HF sont des formules de politesse d'avant-partie. Leur usage reste courant en classée. Les abréviations du chat ne correspondent à aucune règle officielle.")
+
+h2("Les termes du jeu compétitif")
+h3("Bo1, Bo3 et Bo5")
+p("<strong>Bo1</strong> signifie best of one : un seul match décide du vainqueur. Bo3 et Bo5 en demandent respectivement deux et trois à gagner. Les finales se jouent presque toujours en Bo5.")
+p("Un <strong>upset</strong> est une victoire de l'outsider. Le run désigne une série de victoires consécutives. Le sweep correspond à une victoire sans perdre une seule manche. Le détail du format figure sur la page <a href=\"/format-worlds-lol/\">format des Worlds</a>.")
+h3("Macro, micro et calls")
+p("Le <strong>micro</strong> couvre les mécaniques individuelles : esquives, last hits, sorts. Le macro couvre les décisions d'équipe : quand prendre le Baron, quelle voie pousser. Les deux niveaux se travaillent séparément.")
+p("Un <strong>call</strong> est une décision annoncée par un joueur. Un mauvais call suivi par toute l'équipe passe souvent pour une bonne action. Le shotcalling désigne le fait de diriger ces décisions.")
+h3("Worlds, MSI et saisons régulières")
+p("Les <strong>Worlds</strong> sont le championnat du monde annuel, le MSI le tournoi de mi-saison. Les saisons régulières se déroulent par ligues régionales, avec un play-in avant la phase principale.")
+p("Le <strong>Swiss</strong> désigne le format suisse adopté aux Worlds. Les affiches à venir se lisent sur le <a href=\"/planning/\">planning des Worlds</a>. Le classement des équipes reste disponible sur la page <a href=\"/classement/\">classement des Worlds</a>.")
+
+h2("Comment utiliser ce lexique en partie")
+h3("Reconnaître plutôt que réciter")
+p("Personne n'a besoin de connaître les centaines de termes du jeu pour progresser. Une <strong>dizaine</strong> de mots bien maîtrisés suffit à comprendre les appels d'une équipe et à éviter les malentendus.")
+h3("Passer du vocabulaire à la pratique")
+p("Comprendre un terme ne suffit pas : il faut l'appliquer. Un joueur qui sait ce qu'est un freeze mais ne le tente jamais ne progressera pas sur son <strong>wave management</strong>.")
+p("Les guides de progression du <a href=\"/blog/\">blog League of Legends</a> relient chaque terme à une situation réelle. La page <a href=\"/guide-champions-lol/\">guide des champions LoL</a> détaille les kits et les <strong>styles</strong> de jeu.")
+
+body = "\n".join(H)
+
+# --- contrôle : exactement 1 <strong> par paragraphe de premier niveau ---
+paras = re.findall(r"<p>(.*?)</p>", body, re.S)
+bad = [(i, x[:60], len(re.findall(r"<strong>", x))) for i, x in enumerate(paras) if len(re.findall(r"<strong>", x)) != 1]
+for b in bad:
+    print("PARA", b)
+if bad:
+    raise SystemExit("gras à corriger")
+
+page = {
+    "slug": "lexique-lol",
+    "type": "article",
+    "title": "Lexique League of Legends : les termes du jeu",
+    "_keyword": "lexique league of legends",
+    "meta_title": "Lexique League of Legends : les termes du jeu",
+    "meta_description": "Lexique League of Legends : rôles, combat, abréviations (CC, AD, AP, DPS) et vocabulaire de la draft expliqués simplement en français.",
+    "h1": "Lexique League of Legends",
+    "intro": "<p class=\"lead\">Un <strong>lexique league of legends</strong> regroupe les termes que les joueurs emploient en partie : rôles, techniques de combat, abréviations et vocabulaire de la draft. Voici les mots utiles, classés par thème.</p>",
+    "silo": "blog",
+    "body": body,
+    "related": [
+        {"slug": "guide-champions-lol", "anchor": "Guide des champions LoL"},
+        {"slug": "builds-lol", "anchor": "Guide des builds LoL"},
+        {"slug": "blog", "anchor": "Blog League of Legends"},
+    ],
+    "date_modified": "2026-10-23",
+    "date_published": "2026-10-23",
+}
+
+with open(os.path.join(ROOT, "content", "lexique-lol.json"), "w", encoding="utf-8") as f:
+    json.dump(page, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+print("écrit content/lexique-lol.json")
