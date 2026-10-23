@@ -27,9 +27,9 @@ LOL_API = "https://esports-api.lolesports.com/persisted/gw"
 LOL_KEY = "0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z"
 
 STAGE_CONTEXT = {
-    "play_ins": ("le play-in", "Le vainqueur poursuit vers la qualification pour le système suisse ; "
+    "play_ins": ("le play-in", "Le vainqueur poursuit vers la qualification pour le swiss stage ; "
                  "le perdant bascule dans le bas du tableau et devra gagner pour rester en vie."),
-    "swiss": ("le système suisse", "Au système suisse, il faut 3 victoires pour se qualifier et 3 défaites pour être éliminé."),
+    "swiss": ("le swiss stage", "Au swiss stage, il faut 3 victoires pour se qualifier et 3 défaites pour être éliminé."),
     "knockouts": ("la phase finale", "En phase finale, chaque série est éliminatoire."),
 }
 

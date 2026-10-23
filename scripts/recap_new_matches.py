@@ -75,13 +75,13 @@ def write_article(match_id, win, lose, stage_slug):
         deroule = f'{win["name"]} s\'impose {score_txt} face à {lose["name"]}.'
 
     if stage_slug == "play_ins":
-        suite = (f'Grâce à cette victoire, {win["name"]} poursuit sa route vers le système suisse. '
+        suite = (f'Grâce à cette victoire, {win["name"]} poursuit sa route vers le swiss stage. '
                  f'{lose["name"]} bascule dans le bas du tableau et devra gagner pour rester en vie.')
     elif stage_slug == "knockouts":
         suite = (f'En phase finale, chaque série est éliminatoire. {win["name"]} poursuit son parcours, '
                  f'tandis que {lose["name"]} est éliminé de la compétition.')
     else:  # swiss
-        suite = (f'Au système suisse, il faut 3 victoires pour se qualifier et 3 défaites pour être éliminé. '
+        suite = (f'Au swiss stage, il faut 3 victoires pour se qualifier et 3 défaites pour être éliminé. '
                  f'{win["name"]} progresse dans le tableau, tandis que {lose["name"]} devra réagir dès le prochain tour.')
 
     h2_deroule = "Le déroulé du match" if w == 1 else "Le déroulé de la série"
