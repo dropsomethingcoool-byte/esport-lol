@@ -1,0 +1,31 @@
+{
+  "slug": "play-in-worlds-lol",
+  "type": "page",
+  "silo": "planning",
+  "title": "Play-in des Worlds LoL 2026 : résultats et résumés",
+  "meta_title": "Play-in Worlds LoL 2026 : résultats et résumés des matchs",
+  "meta_description": "Résultats du play-in des Worlds LoL 2026 : Karmine Corp qualifiée pour le swiss stage. Retrouvez le résumé de chaque match.",
+  "h1": "Play-in des Worlds LoL 2026",
+  "intro": "<p class=\"lead\">Le play-in des Worlds 2026 s'est déroulé du 15 au 18 octobre. Retrouvez ici les résultats et le résumé de chaque rencontre.</p>",
+  "body": "<h2>Le play-in des Worlds 2026</h2>\n<p>Le play-in s'est déroulé du 15 au 18 octobre 2026. Quatre équipes s'y sont affrontées pour décrocher une place dans le swiss stage : <strong>Karmine Corp</strong>, MVK Esports, FURIA et Cloud9 Kia.</p>\n<p><strong>Karmine Corp</strong> a remporté le play-in, validant son billet pour le swiss stage après un parcours maîtrisé.</p>\n\n<h2>Les matchs du play-in</h2>\n<p>Retrouvez le résumé de chaque rencontre :</p>\n<ul>\n<li><a href=\"/karmine-corp-remporte-play-in/\">Karmine Corp remporte le play-in</a> — la qualification de KC pour le swiss stage</li>\n<li><a href=\"/kc-vs-mvk-resume/\">Karmine Corp 3-0 MVK Esports</a></li>\n<li><a href=\"/mvk-vs-fur-resume/\">MVK Esports 3-0 FURIA</a></li>\n<li><a href=\"/mvk-vs-furia-resume/\">MVK Esports 3-1 FURIA</a></li>\n<li><a href=\"/fur-vs-c9-resume/\">FURIA 3-1 Cloud9 Kia</a></li>\n<li><a href=\"/kc-vs-cloud9-resume/\">Karmine Corp 3-2 Cloud9 Kia</a></li>\n</ul>\n\n<p>Le <a href=\"/planning/\">swiss stage</a> a pris le relais à partir du 23 octobre, avec les 16 équipes qualifiées.</p>",
+  "related": [
+    {
+      "slug": "planning",
+      "anchor": "planning des Worlds"
+    },
+    {
+      "slug": "classement",
+      "anchor": "classement des Worlds"
+    },
+    {
+      "slug": "resultats",
+      "anchor": "résultats en direct"
+    },
+    {
+      "slug": "blog",
+      "anchor": "tous les résumés"
+    }
+  ],
+  "date_modified": "2026-10-23",
+  "date_published": "2026-10-23"
+}

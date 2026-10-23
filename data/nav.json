@@ -15,6 +15,10 @@
         {
           "label": "Classement",
           "slug": "classement"
+        },
+        {
+          "label": "Play-in",
+          "slug": "play-in-worlds-lol"
         }
       ]
     },
