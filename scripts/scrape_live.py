@@ -27,6 +27,13 @@ LEAGUE = "98767975604431411"        # LoL esports (toutes saisons)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "live.json")
 
+# Terminologie : l'API lolesports (hl=fr-FR) renvoie des noms de phase français.
+STAGE_NAMES = {"Système suisse": "Swiss stage", "Play-ins": "Play-in"}
+
+
+def tr_stage(name):
+    return STAGE_NAMES.get(name, name)
+
 
 def get(path):
     req = urllib.request.Request(API + path, headers={"x-api-key": KEY, "Accept": "application/json"})
@@ -125,10 +132,10 @@ def build_standings(stages):
     standings = []
     for st in stages:
         stage_slug = st.get("slug")
-        stage_name = st.get("name") or stage_slug
+        stage_name = tr_stage(st.get("name") or stage_slug)
         for sec in st.get("sections", []):
             rankings = sec.get("rankings") or []
-            sec_name = sec.get("name") or ""
+            sec_name = tr_stage(sec.get("name") or "")
             matches = sec.get("matches", [])
 
             if rankings:
@@ -136,7 +143,7 @@ def build_standings(stages):
                 for i, rk in enumerate(rankings):
                     teams = [parse_standings_team(t) for t in (rk.get("teams") or [])]
                     teams = [t for t in teams if t["code"] not in ("TBD", "", None)]
-                    group_title = f"{stage_name} — {sec_name}".strip(" —")
+                    group_title = stage_name if sec_name == stage_name else f"{stage_name} — {sec_name}".strip(" —")
                     if len(rankings) > 1 and rk.get("ordinal") is not None:
                         group_title = f"{stage_name} — {sec_name} #{rk.get('ordinal') + 1}".strip(" —")
                     standings.append({
@@ -261,7 +268,7 @@ def main():
                     all_matches.append(match)
             stages_out.append({
                 "slug": st.get("slug"),
-                "name": st.get("name"),
+                "name": tr_stage(st.get("name")),
                 "matches": matches_out,
             })
 

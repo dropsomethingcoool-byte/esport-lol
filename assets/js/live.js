@@ -94,9 +94,13 @@
   function renderMatches() {
     var el = document.getElementById("live-matches");
     if (!el) return;
-    var order = { inProgress: 0, unstarted: 1, completed: 2 };
-    var ms = allMatches().filter(isReal).sort(function (a, b) {
-      return (order[a.state] || 9) - (order[b.state] || 9);
+    var now = Date.now();
+    var ms = allMatches().filter(isReal).filter(function (m) {
+      if (m.state === "inProgress") return true;
+      if (m.state === "unstarted") return new Date(m.startTime).getTime() >= now;
+      return false; // matchs terminés ou passés → exclus
+    }).sort(function (a, b) {
+      return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
     });
     el.innerHTML = ms.slice(0, 6).map(matchCard).join("") || '<p class="muted">Aucun match programmé.</p>';
   }

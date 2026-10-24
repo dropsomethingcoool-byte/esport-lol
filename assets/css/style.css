@@ -1244,9 +1244,10 @@ html.cta-blocked .cta-affiliate { display: none !important; }
   }
   .site-nav.open { display: flex; }
   .site-nav .nav-item { padding: 11px 14px; }
-  .header-inner { flex-wrap: wrap; gap: 12px; padding: 26px 0; }
-  .brand-mark { width: 44px; height: 44px; }
-  .nav-toggle { width: 44px; height: 44px; font-size: 22px; }
+  .header-inner { flex-wrap: wrap; gap: 12px; padding: 34px 0; }
+  .brand-mark { width: 56px; height: 56px; }
+  .brand-name { font-size: 27px; }
+  .nav-toggle { width: 56px; height: 56px; font-size: 28px; }
   main.content { padding-top: 20px; }
   .nav-dropdown { position: static; box-shadow: none; border: none; padding-left: 14px; }
 
