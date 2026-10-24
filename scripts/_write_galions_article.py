@@ -48,7 +48,7 @@ article = {
     ),
     "related": [
         {"slug": "blog", "anchor": "tous les articles du blog"},
-        {"slug": "tirage-au-sort-worlds-2026", "anchor": "tirage au sort du système suisse"},
+        {"slug": "tirage-au-sort-worlds-2026", "anchor": "tirage au sort du swiss stage"},
     ],
     "date_modified": TODAY,
     "date_published": TODAY,

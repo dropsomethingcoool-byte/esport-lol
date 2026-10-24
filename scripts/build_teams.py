@@ -30,7 +30,7 @@ TEAMS = [
  ("DK", "Dplus Kia", "Corée du Sud · LCK", "#4 LCK",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/Dplus_Kialogo_std.png",
   "Dplus Kia, héritière de DAMWON Gaming (championne du monde 2020), reste une place forte de la LCK. Autour de ShowMaker, elle vise à retrouver les sommets après des saisons irrégulières.",
-  "Quatrième seed coréen, Dplus Kia est une équipe au plafond élevé mais irrégulière. Sa capacité à passer le système suisse dépendra de sa constance."),
+  "Quatrième seed coréen, Dplus Kia est une équipe au plafond élevé mais irrégulière. Sa capacité à passer le swiss stage dépendra de sa constance."),
  ("AL", "Anyone's Legend", "Chine · LPL", "#1 LPL",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Anyone%27s_Legendlogo_std.png",
   "Anyone's Legend a remporté la LPL 2026 et s'affirme comme la meilleure équipe chinoise du moment. Son effectif mêle jeunes talents et joueurs confirmés.",
@@ -46,11 +46,11 @@ TEAMS = [
  ("IG", "Invictus Gaming", "Chine · LPL", "#4 LPL",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Invictus_Gaminglogo_std.png",
   "Invictus Gaming, championne du monde 2018, a réuni un effectif expérimenté autour de TheShy et Rookie. Son vécu des grandes scènes est un atout.",
-  "Quatrième seed chinoise, Invictus Gaming mise sur l'expérience pour déjouer les pronostics. Un adversaire piégeux en système suisse."),
+  "Quatrième seed chinoise, Invictus Gaming mise sur l'expérience pour déjouer les pronostics. Un adversaire piégeux en swiss stage."),
  ("TL", "Team Liquid", "Amérique du Nord · LCS", "#1 LCS",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Team_Liquidlogo_std.png",
   "Team Liquid est l'organisation la plus titrée d'Amérique du Nord. Autour de CoreJJ et d'un noyau solide, elle domine la scène nord-américaine.",
-  "Premier seed nord-américain, Team Liquid porte les espoirs de sa région. Passer le système suisse serait déjà un bel accomplissement."),
+  "Premier seed nord-américain, Team Liquid porte les espoirs de sa région. Passer le swiss stage serait déjà un bel accomplissement."),
  ("LYN", "LYON", "Amérique du Nord · LCS", "#2 LCS",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/78/LYON_%282024_American_Team%29logo_std.png",
   "LYON est une formation nord-américaine en progression, qui a décroché sa place aux Worlds via les playoffs LCS 2026.",
@@ -66,11 +66,11 @@ TEAMS = [
  ("TSW", "Team Secret Whales", "APAC · LCP", "#1 LCP",
   "https://static.lolesports.com/teams/1774598000328_White_EyeText_600p.png",
   "Team Secret Whales domine la scène vietnamienne et la LCP. Elle incarne le renouveau de l'Asie-Pacifique sur la scène internationale.",
-  "Premier seed APAC, Team Secret Whales espère créer la surprise face aux grosses écuries et sortir du système suisse."),
+  "Premier seed APAC, Team Secret Whales espère créer la surprise face aux grosses écuries et sortir du swiss stage."),
  ("CFO", "CTBC Flying Oyster", "APAC · LCP", "#2 LCP",
   "https://static.lolesports.com/teams/1656307849320_CFO_Logo.png",
   "CTBC Flying Oyster est une formation taïwanaise régulière de la LCP, souvent présente aux compétitions internationales.",
-  "Deuxième seed APAC, CTBC Flying Oyster part avec un statut d'outsider. Chaque victoire en système suisse sera une performance."),
+  "Deuxième seed APAC, CTBC Flying Oyster part avec un statut d'outsider. Chaque victoire en swiss stage sera une performance."),
  ("LOS", "Los Grandes", "Brésil · CBLOL", "#1 CBLOL",
   "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/L%C3%98Slogo_std.png",
   "Los Grandes a remporté le CBLOL 2026 et représente la meilleure équipe brésilienne. Elle porte les espoirs de la scène sud-américaine.",
@@ -78,19 +78,19 @@ TEAMS = [
  ("C9", "Cloud9 Kia", "Amérique du Nord · LCS", "#3 LCS · play-in",
   "https://static.lolesports.com/teams/1736924120254_C9Kia_IconBlue_Transparent_2000x2000.png",
   "Cloud9 est une organisation emblématique nord-américaine, présente au plus haut niveau depuis des années. Elle passe par le play-in cette année.",
-  "Cloud9 Kia doit d'abord sortir du play-in pour rejoindre le système suisse. Une fois qualifiée, elle peut jouer les trouble-fêtes."),
+  "Cloud9 Kia doit d'abord sortir du play-in pour rejoindre le swiss stage. Une fois qualifiée, elle peut jouer les trouble-fêtes."),
  ("KC", "Karmine Corp", "EMEA · LEC", "#3 LEC · play-in",
   "https://static.lolesports.com/teams/1704714951336_KC.png",
   "Karmine Corp est l'organisation française au plus grand public d'Europe. Portée par une communauté passionnée, elle dispute le play-in des Worlds 2026.",
-  "Karmine Corp vise la qualification pour le système suisse, puis une belle campagne. Son public et son agressivité en font un adversaire à part."),
+  "Karmine Corp vise la qualification pour le swiss stage, puis une belle campagne. Son public et son agressivité en font un adversaire à part."),
  ("MVK", "MVK Esports", "APAC · LCP", "#3 LCP · play-in",
   "https://static.lolesports.com/teams/1767089709161_White_Logo.png",
   "MVK Esports est une formation vietnamienne issue de la scène de la LCP. Elle décroche sa place aux Worlds via le play-in.",
-  "MVK Esports doit passer le play-in pour rejoindre le système suisse. Une qualification serait déjà un succès pour la structure."),
+  "MVK Esports doit passer le play-in pour rejoindre le swiss stage. Une qualification serait déjà un succès pour la structure."),
  ("FUR", "FURIA", "Brésil · CBLOL", "#2 CBLOL · play-in",
   "https://static.lolesports.com/teams/FURIA---black.png",
   "FURIA est une organisation brésilienne reconnue, présente dans plusieurs esports. Sa section League of Legends dispute le play-in des Worlds 2026.",
-  "FURIA doit sortir du play-in pour rejoindre le système suisse. Une qualification marquerait un jalon pour l'organisation."),
+  "FURIA doit sortir du play-in pour rejoindre le swiss stage. Une qualification marquerait un jalon pour l'organisation."),
 ]
 
 REGIONS_ORDER = [
@@ -146,14 +146,14 @@ def build_hub():
                 )
         sections.append(f'<div class="team-section-title">{region_label}</div><div class="teams-grid">{"".join(tiles)}</div>')
 
-    body = ("<p>Les <strong>19 équipes</strong> des Worlds 2026, des favorites du système suisse aux "
+    body = ("<p>Les <strong>19 équipes</strong> des Worlds 2026, des favorites du swiss stage aux "
             "formations issues du play-in. Cliquez sur une équipe pour découvrir son historique et ses "
             "attentes pour cette édition.</p>" + "".join(sections))
     return {
         "slug": "equipes", "type": "hub", "silo": "equipes",
         "title": "Équipes des Worlds 2026 — League of Legends",
         "meta_title": "Équipes des Worlds 2026 | esport-lol",
-        "meta_description": "Toutes les équipes des Worlds League of Legends 2026 : effectifs, historiques et attentes. Du système suisse au play-in.",
+        "meta_description": "Toutes les équipes des Worlds League of Legends 2026 : effectifs, historiques et attentes. Du swiss stage au play-in.",
         "h1": "Équipes des Worlds 2026",
         "intro": '<p class="lead">Les <strong>équipes des Worlds 2026</strong>, de la Corée au Brésil : historiques, effectifs et attentes.</p>',
         "body": body,

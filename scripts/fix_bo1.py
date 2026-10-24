@@ -22,8 +22,8 @@ b = b.replace(
     "<h3>Les huit affiches du Round 1, en Bo1</h3>",
 )
 b = b.replace(
-    "Au système suisse, chaque équipe enchaîne jusqu'à cinq rondes. Trois victoires qualifient pour les quarts de finale, trois défaites éliminent. Les matchs de qualification et d'élimination se jouent en <strong>Bo3</strong>, les autres en <strong>Bo1</strong>.",
-    "Au système suisse, chaque équipe enchaîne jusqu'à cinq rondes. Trois victoires qualifient pour les quarts de finale, trois défaites éliminent. Le <strong>Round 1 se joue en Bo1</strong>, une seule manche. Les matchs de qualification et d'élimination, à partir du Round 3, se jouent en <strong>Bo3</strong>, les autres restent en <strong>Bo1</strong>.",
+    "Au swiss stage, chaque équipe enchaîne jusqu'à cinq rondes. Trois victoires qualifient pour les quarts de finale, trois défaites éliminent. Les matchs de qualification et d'élimination se jouent en <strong>Bo3</strong>, les autres en <strong>Bo1</strong>.",
+    "Au swiss stage, chaque équipe enchaîne jusqu'à cinq rondes. Trois victoires qualifient pour les quarts de finale, trois défaites éliminent. Le <strong>Round 1 se joue en Bo1</strong>, une seule manche. Les matchs de qualification et d'élimination, à partir du Round 3, se jouent en <strong>Bo3</strong>, les autres restent en <strong>Bo1</strong>.",
 )
 art["body"] = b
 save("tirage-au-sort-worlds-2026.json", art)
