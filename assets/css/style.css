@@ -182,7 +182,7 @@ main.content a:not(.btn):not(.pill):not(.nav-item):not(.explore-tile):not(.cta-b
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-.header-inner { display: flex; align-items: center; gap: 30px; padding: 22px 0; }
+.header-inner { display: flex; align-items: center; gap: 30px; padding: 30px 0; }
 .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; color: var(--text); flex: none; }
 .brand-mark { display: block; width: 40px; height: 40px; object-fit: contain; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -251,7 +251,7 @@ main.content a:not(.btn):not(.pill):not(.nav-item):not(.explore-tile):not(.cta-b
 .nav-dropdown a:hover { background: var(--panel-2); color: var(--text); }
 
 /* ---------- Hero (accueil) ---------- */
-.hero { padding: 72px 0 28px; text-align: left; }
+.hero { padding: 28px 0 28px; text-align: left; }
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;

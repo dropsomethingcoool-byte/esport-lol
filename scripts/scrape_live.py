@@ -34,6 +34,9 @@ STAGE_NAMES = {"Système suisse": "Swiss stage", "Play-ins": "Play-in"}
 def tr_stage(name):
     return STAGE_NAMES.get(name, name)
 
+# Ordre d'affichage du classement : swiss d'abord (phase en cours), puis play-in, knockouts.
+STAGE_ORDER = {"swiss": 0, "play_ins": 1, "knockouts": 2}
+
 
 def get(path):
     req = urllib.request.Request(API + path, headers={"x-api-key": KEY, "Accept": "application/json"})
@@ -162,6 +165,7 @@ def build_standings(stages):
                         "title": title or stage_name,
                         "teams": teams,
                     })
+    standings.sort(key=lambda e: STAGE_ORDER.get(e.get("stage"), 9))
     return standings
 
 
