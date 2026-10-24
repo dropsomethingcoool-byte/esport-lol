@@ -182,7 +182,7 @@ main.content a:not(.btn):not(.pill):not(.nav-item):not(.explore-tile):not(.cta-b
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-.header-inner { display: flex; align-items: center; gap: 30px; padding: 30px 0; }
+.header-inner { display: flex; align-items: center; gap: 30px; padding: 30px 24px; }
 .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; color: var(--text); flex: none; }
 .brand-mark { display: block; width: 40px; height: 40px; object-fit: contain; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -1006,6 +1006,30 @@ article li { margin-bottom: 8px; }
 .players-grid .pt-name { font-family: var(--font-display); font-size: 18px; letter-spacing: -0.01em; }
 .players-grid .pt-meta { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--faint); }
 
+/* ---------- Toggle phase (classement / résultats) ---------- */
+.stage-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 4px 0 18px;
+}
+.stage-btn {
+  background: var(--panel);
+  border: none;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 18px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+.stage-btn + .stage-btn { border-left: 1px solid var(--border); }
+.stage-btn:hover:not(.active) { color: var(--text); background: var(--bg-3); }
+.stage-btn.active { background: var(--gold); color: #0b0b0d; }
+
 /* ---------- Encart CTA (paris — BetNinja) ---------- */
 /* Règle de portail : les CTA affiliés sont masqués quand html.cta-blocked */
 html.cta-blocked .cta-affiliate { display: none !important; }
@@ -1244,7 +1268,7 @@ html.cta-blocked .cta-affiliate { display: none !important; }
   }
   .site-nav.open { display: flex; }
   .site-nav .nav-item { padding: 11px 14px; }
-  .header-inner { flex-wrap: wrap; gap: 12px; padding: 34px 0; }
+  .header-inner { flex-wrap: wrap; gap: 12px; padding: 40px 20px; }
   .brand-mark { width: 56px; height: 56px; }
   .brand-name { font-size: 27px; }
   .nav-toggle { width: 56px; height: 56px; font-size: 28px; }

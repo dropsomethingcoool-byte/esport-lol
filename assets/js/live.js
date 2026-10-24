@@ -9,6 +9,7 @@
   var LIVE_URL = "/live.json";
   var POLL_MS = 60000;
   var state = null;
+  var activeStage = "swiss";
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -35,6 +36,30 @@
 
   function isReal(m) {
     return m.teams.some(function (t) { return t.code && t.code !== "TBD"; });
+  }
+
+  function matchStage(m) {
+    if (!state || !state.stages) return null;
+    for (var i = 0; i < state.stages.length; i++) {
+      var st = state.stages[i];
+      for (var j = 0; j < st.matches.length; j++) {
+        if (st.matches[j].id === m.id) return st.slug;
+      }
+    }
+    return null;
+  }
+
+  function initStageToggle() {
+    document.querySelectorAll(".stage-toggle").forEach(function (toggle) {
+      var btns = toggle.querySelectorAll(".stage-btn");
+      btns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          activeStage = btn.getAttribute("data-stage");
+          btns.forEach(function (b) { b.classList.toggle("active", b === btn); });
+          render();
+        });
+      });
+    });
   }
 
   function badge(m) {
@@ -111,7 +136,8 @@
     var done = (state.results && state.results.length)
       ? state.results
       : allMatches().filter(isReal).filter(function (m) { return m.state === "completed"; });
-    if (!done.length) { el.innerHTML = '<p class="muted">Aucun résultat pour le moment.</p>'; return; }
+    done = done.filter(function (m) { return matchStage(m) === activeStage; });
+    if (!done.length) { el.innerHTML = '<p class="muted">Aucun résultat pour cette phase.</p>'; return; }
     el.innerHTML = done.map(matchCard).join("");
   }
 
@@ -145,7 +171,9 @@
       el.innerHTML = '<p class="muted">Le classement sera disponible dès les premiers résultats des Worlds 2026.</p>';
       return;
     }
-    el.innerHTML = sts.map(standingsGroup).join("");
+    var filtered = sts.filter(function (s) { return s.stage === activeStage; });
+    if (!filtered.length) { el.innerHTML = '<p class="muted">Aucun classement pour cette phase.</p>'; return; }
+    el.innerHTML = filtered.map(standingsGroup).join("");
   }
 
   function render() {
@@ -163,8 +191,8 @@
       .catch(function () { /* silencieux : on garde le dernier état */ });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", load);
-  else load();
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { initStageToggle(); load(); });
+  else { initStageToggle(); load(); }
   setInterval(load, POLL_MS);
   setInterval(renderCountdown, 1000); // tick du compte à rebours
 
