@@ -1,0 +1,107 @@
+{
+  "faker": {
+    "summonerName": "Faker",
+    "photo": "http://static.lolesports.com/players/1769087499078_LCK_T1_Faker_F.PNG",
+    "role": "mid",
+    "code": "T1",
+    "team": "T1"
+  },
+  "caliste": {
+    "summonerName": "Caliste",
+    "photo": "http://static.lolesports.com/players/1774651348279_caliste.png",
+    "role": "bottom",
+    "code": "KC",
+    "team": "Karmine Corp"
+  },
+  "hans sama": {
+    "summonerName": "Hans Sama",
+    "photo": "http://static.lolesports.com/players/1768549994123_HansSama-01.png",
+    "role": "bottom",
+    "code": "G2",
+    "team": "G2 Esports"
+  },
+  "chovy": {
+    "summonerName": "Chovy",
+    "photo": "http://static.lolesports.com/players/1778842975847_LCK_GEN_Chovy_F.png",
+    "role": "mid",
+    "code": "GEN",
+    "team": "Gen.G Esports"
+  },
+  "ruler": {
+    "summonerName": "Ruler",
+    "photo": "http://static.lolesports.com/players/1778842957393_LCK_GEN_Ruler_F.PNG",
+    "role": "bottom",
+    "code": "GEN",
+    "team": "Gen.G Esports"
+  },
+  "zeus": {
+    "summonerName": "Zeus",
+    "photo": "http://static.lolesports.com/players/1769089435131_LCK_HLE_Zeus_F.PNG",
+    "role": "top",
+    "code": "HLE",
+    "team": "Hanwha Life Esports"
+  },
+  "gumayusi": {
+    "summonerName": "Gumayusi",
+    "photo": "http://static.lolesports.com/players/1769089421483_LCK_HLE_Gumayusi_F.PNG",
+    "role": "bottom",
+    "code": "HLE",
+    "team": "Hanwha Life Esports"
+  },
+  "showmaker": {
+    "summonerName": "ShowMaker",
+    "photo": "http://static.lolesports.com/players/1778842721951_LCK_DK_Showmaker_F.png",
+    "role": "mid",
+    "code": "DK",
+    "team": "Dplus KIA"
+  },
+  "theshy": {
+    "summonerName": "TheShy",
+    "photo": "http://static.lolesports.com/players/1753279025857_image628.png",
+    "role": "top",
+    "code": "IG",
+    "team": "Invictus Gaming"
+  },
+  "jackeylove": {
+    "summonerName": "JackeyLove",
+    "photo": "http://static.lolesports.com/players/1768348354504_jackeylove.png",
+    "role": "bottom",
+    "code": "TES",
+    "team": "TOP ESPORTS"
+  },
+  "knight": {
+    "summonerName": "Knight",
+    "photo": "http://static.lolesports.com/players/1768348559860_knight.png",
+    "role": "mid",
+    "code": "BLG",
+    "team": "BILIBILI GAMING"
+  },
+  "viper": {
+    "summonerName": "Viper",
+    "photo": "http://static.lolesports.com/players/1768349250531_viper.png",
+    "role": "bottom",
+    "code": "BLG",
+    "team": "BILIBILI GAMING"
+  },
+  "bin": {
+    "summonerName": "Bin",
+    "photo": "http://static.lolesports.com/players/1768347827679_bin.png",
+    "role": "top",
+    "code": "BLG",
+    "team": "BILIBILI GAMING"
+  },
+  "corejj": {
+    "summonerName": "CoreJJ",
+    "photo": "http://static.lolesports.com/players/1769150483053_AME_LCS26S1_TL_COREJJ.png",
+    "role": "support",
+    "code": "TLAW",
+    "team": "Team Liquid Alienware"
+  },
+  "brokenblade": {
+    "summonerName": "BrokenBlade",
+    "photo": "http://static.lolesports.com/players/1768550002850_BrokenBlade-01.png",
+    "role": "top",
+    "code": "G2",
+    "team": "G2 Esports"
+  }
+}

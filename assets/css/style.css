@@ -945,6 +945,67 @@ article li { margin-bottom: 8px; }
   padding-bottom: 8px;
 }
 
+/* ---------- Fiche joueur (annuaire) ---------- */
+.player-hero {
+  display: flex; align-items: center; gap: 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 6px 0 30px;
+}
+.player-photo {
+  width: 96px; height: 96px; flex: none;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+.player-hero-meta { display: flex; flex-direction: column; gap: 4px; }
+.player-name {
+  font-family: var(--font-display);
+  font-size: 26px; line-height: 1.1; color: var(--text);
+}
+.player-facts { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.player-facts li { font-family: var(--font-body); font-size: 14px; color: var(--muted); }
+.player-facts li span {
+  font-family: var(--font-mono);
+  font-size: 10.5px; letter-spacing: 1.3px; text-transform: uppercase;
+  color: var(--faint);
+  display: inline-block; min-width: 64px;
+}
+.player-facts li a { color: var(--gold); text-decoration: none; }
+.player-facts li a:hover { text-decoration: underline; }
+
+/* ---------- Hub annuaire joueurs ---------- */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.players-grid .player-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.18s ease;
+}
+.players-grid .player-tile:hover { border-color: rgba(200, 169, 106, 0.5); color: var(--text); }
+.players-grid .player-tile img {
+  width: 68px; height: 68px; flex: none;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--bg);
+}
+.players-grid .pt-name { font-family: var(--font-display); font-size: 18px; letter-spacing: -0.01em; }
+.players-grid .pt-meta { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--faint); }
+
 /* ---------- Encart CTA (paris — BetNinja) ---------- */
 /* Règle de portail : les CTA affiliés sont masqués quand html.cta-blocked */
 html.cta-blocked .cta-affiliate { display: none !important; }

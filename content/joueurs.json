@@ -1,0 +1,27 @@
+{
+  "slug": "joueurs",
+  "type": "hub",
+  "silo": "joueurs",
+  "title": "Joueurs des Worlds 2026 — League of Legends",
+  "meta_title": "Joueurs des Worlds LoL 2026 | esport-lol",
+  "meta_description": "Fiches des joueurs des Worlds League of Legends 2026 : profil, palmarès et style de jeu des stars du tournoi.",
+  "h1": "Joueurs des Worlds 2026",
+  "intro": "<p class=\"lead\">Les <strong>joueurs des Worlds 2026</strong> : profil, palmarès et style de jeu des stars de la compétition.</p>",
+  "body": "<p>Les <strong>fiches joueurs</strong> des Worlds 2026 : profil, palmarès, style de jeu et rôle dans leur équipe.</p><div class=\"players-grid\"><a class=\"player-tile\" href=\"/joueur-caliste/\"><img src=\"https://static.lolesports.com/players/1774651348279_caliste.png\" alt=\"Caliste, ADC de Karmine Corp\" loading=\"lazy\"><span class=\"pt-name\">Caliste</span><span class=\"pt-meta\">ADC · Karmine Corp</span></a><a class=\"player-tile\" href=\"/joueur-faker/\"><img src=\"https://static.lolesports.com/players/1769087499078_LCK_T1_Faker_F.PNG\" alt=\"Faker, Midlane de T1\" loading=\"lazy\"><span class=\"pt-name\">Faker</span><span class=\"pt-meta\">Midlane · T1</span></a></div>",
+  "date_modified": "2026-10-24",
+  "date_published": "2026-10-24",
+  "related": [
+    {
+      "slug": "equipes",
+      "anchor": "Toutes les équipes des Worlds"
+    },
+    {
+      "slug": "joueurs-a-suivre-worlds-2026",
+      "anchor": "Joueurs à suivre aux Worlds 2026"
+    },
+    {
+      "slug": "planning",
+      "anchor": "Planning des Worlds LoL"
+    }
+  ]
+}
