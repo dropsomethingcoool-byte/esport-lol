@@ -25,12 +25,12 @@
     {
       "label": "Équipes",
       "slug": "equipes",
-      "pages": []
-    },
-    {
-      "label": "Joueurs",
-      "slug": "joueurs",
-      "pages": []
+      "pages": [
+        {
+          "label": "Joueurs",
+          "slug": "joueurs"
+        }
+      ]
     },
     {
       "label": "Blog",

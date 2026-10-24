@@ -1,0 +1,62 @@
+{
+  "faker": {
+    "local": "/assets/img/players/faker.webp",
+    "size": 3502
+  },
+  "caliste": {
+    "local": "/assets/img/players/caliste.webp",
+    "size": 5416
+  },
+  "hans sama": {
+    "local": "/assets/img/players/hans sama.webp",
+    "size": 6972
+  },
+  "chovy": {
+    "local": "/assets/img/players/chovy.webp",
+    "size": 3726
+  },
+  "ruler": {
+    "local": "/assets/img/players/ruler.webp",
+    "size": 3684
+  },
+  "zeus": {
+    "local": "/assets/img/players/zeus.webp",
+    "size": 3714
+  },
+  "gumayusi": {
+    "local": "/assets/img/players/gumayusi.webp",
+    "size": 3864
+  },
+  "showmaker": {
+    "local": "/assets/img/players/showmaker.webp",
+    "size": 2564
+  },
+  "theshy": {
+    "local": "/assets/img/players/theshy.webp",
+    "size": 3870
+  },
+  "jackeylove": {
+    "local": "/assets/img/players/jackeylove.webp",
+    "size": 4088
+  },
+  "knight": {
+    "local": "/assets/img/players/knight.webp",
+    "size": 4034
+  },
+  "viper": {
+    "local": "/assets/img/players/viper.webp",
+    "size": 4348
+  },
+  "bin": {
+    "local": "/assets/img/players/bin.webp",
+    "size": 3908
+  },
+  "corejj": {
+    "local": "/assets/img/players/corejj.webp",
+    "size": 4936
+  },
+  "brokenblade": {
+    "local": "/assets/img/players/brokenblade.webp",
+    "size": 7184
+  }
+}

@@ -26,7 +26,7 @@ def main():
         team = p.get("team_name", "")
         photo = p.get("photo", "")
         img = (
-            f'<img src="{photo}" alt="{pseudo}, {role} de {team}" loading="lazy">'
+            f'<img src="{photo}" alt="{pseudo}, {role} de {team} — Worlds 2026" loading="lazy">'
             if photo else ""
         )
         items.append(
@@ -43,7 +43,7 @@ def main():
     hub = {
         "slug": "joueurs",
         "type": "hub",
-        "silo": "joueurs",
+        "silo": "equipes",
         "title": "Joueurs des Worlds 2026 — League of Legends",
         "meta_title": "Joueurs des Worlds LoL 2026 | esport-lol",
         "meta_description": "Fiches des joueurs des Worlds League of Legends 2026 : profil, palmarès et style de jeu des stars du tournoi.",

@@ -8,7 +8,7 @@
       "country": "France",
       "team": "G2 Esports",
       "team_slug": "equipe-g2-esports",
-      "photo": "https://static.lolesports.com/players/1768549994123_HansSama-01.png",
+      "photo": "/assets/img/players/hans-sama.webp",
       "facts": "ADC français de G2 Esports, l'un des tireurs les plus capés d'Europe, passé par la LEC et la LCS. Réputé pour sa mécanique et sa régularité en teamfight."
     },
     {
@@ -19,7 +19,7 @@
       "country": "Corée du Sud",
       "team": "Gen.G",
       "team_slug": "equipe-gen-g",
-      "photo": "https://static.lolesports.com/players/1778842975847_LCK_GEN_Chovy_F.png",
+      "photo": "/assets/img/players/chovy.webp",
       "facts": "Midlaner vedette de Gen.G, considéré comme la meilleure midlane du monde grâce à sa mécanique exceptionnelle. Multiple champion de LCK."
     },
     {
@@ -30,7 +30,7 @@
       "country": "Corée du Sud",
       "team": "Gen.G",
       "team_slug": "equipe-gen-g",
-      "photo": "https://static.lolesports.com/players/1778842957393_LCK_GEN_Ruler_F.PNG",
+      "photo": "/assets/img/players/ruler.webp",
       "facts": "ADC de Gen.G, champion du monde 2017 avec Samsung Galaxy. L'un des tireurs les plus titrés de l'histoire de League of Legends."
     },
     {
@@ -41,7 +41,7 @@
       "country": "Corée du Sud",
       "team": "Hanwha Life Esports",
       "team_slug": "equipe-hanwha-life-esports",
-      "photo": "https://static.lolesports.com/players/1769089435131_LCK_HLE_Zeus_F.PNG",
+      "photo": "/assets/img/players/zeus.webp",
       "facts": "Toplaner de Hanwha Life Esports, double champion du monde (2023, 2024) avec T1. Élu MVP de la finale 2023."
     },
     {
@@ -52,7 +52,7 @@
       "country": "Corée du Sud",
       "team": "Hanwha Life Esports",
       "team_slug": "equipe-hanwha-life-esports",
-      "photo": "https://static.lolesports.com/players/1769089421483_LCK_HLE_Gumayusi_F.PNG",
+      "photo": "/assets/img/players/gumayusi.webp",
       "facts": "ADC de Hanwha Life Esports, double champion du monde (2023, 2024) avec T1. Un tireur fiable en phase décisive."
     },
     {
@@ -63,7 +63,7 @@
       "country": "Corée du Sud",
       "team": "Dplus Kia",
       "team_slug": "equipe-dplus-kia",
-      "photo": "https://static.lolesports.com/players/1778842721951_LCK_DK_Showmaker_F.png",
+      "photo": "/assets/img/players/showmaker.webp",
       "facts": "Midlaner de Dplus Kia, champion du monde 2020 avec DAMWON Gaming. Finaliste des Worlds 2021."
     },
     {
@@ -74,7 +74,7 @@
       "country": "Corée du Sud",
       "team": "Invictus Gaming",
       "team_slug": "equipe-invictus-gaming",
-      "photo": "https://static.lolesports.com/players/1753279025857_image628.png",
+      "photo": "/assets/img/players/theshy.webp",
       "facts": "Toplaner d'Invictus Gaming, champion du monde 2018 et élu MVP de la finale. Légende de la toplane."
     },
     {
@@ -85,7 +85,7 @@
       "country": "Chine",
       "team": "Top Esports",
       "team_slug": "equipe-top-esports",
-      "photo": "https://static.lolesports.com/players/1768348354504_jackeylove.png",
+      "photo": "/assets/img/players/jackeylove.webp",
       "facts": "ADC de Top Esports, champion du monde 2018 avec Invictus Gaming. L'une des stars de la LPL chinoise."
     },
     {
@@ -96,7 +96,7 @@
       "country": "Chine",
       "team": "Bilibili Gaming",
       "team_slug": "equipe-bilibili-gaming",
-      "photo": "https://static.lolesports.com/players/1768348559860_knight.png",
+      "photo": "/assets/img/players/knight.webp",
       "facts": "Midlaner de Bilibili Gaming, MVP de la LPL. L'un des meilleurs joueurs chinois de sa génération."
     },
     {
@@ -107,7 +107,7 @@
       "country": "Corée du Sud",
       "team": "Bilibili Gaming",
       "team_slug": "equipe-bilibili-gaming",
-      "photo": "https://static.lolesports.com/players/1768349250531_viper.png",
+      "photo": "/assets/img/players/viper.webp",
       "facts": "ADC de Bilibili Gaming, champion du monde 2021 avec Edward Gaming. Un facteur X dans chaque série."
     },
     {
@@ -118,7 +118,7 @@
       "country": "Chine",
       "team": "Bilibili Gaming",
       "team_slug": "equipe-bilibili-gaming",
-      "photo": "https://static.lolesports.com/players/1768347827679_bin.png",
+      "photo": "/assets/img/players/bin.webp",
       "facts": "Toplaner de Bilibili Gaming, finaliste des Worlds 2023 et 2024. Réputé pour ses initiations décisives."
     },
     {
@@ -129,7 +129,7 @@
       "country": "Corée du Sud",
       "team": "Team Liquid",
       "team_slug": "equipe-team-liquid",
-      "photo": "https://static.lolesports.com/players/1769150483053_AME_LCS26S1_TL_COREJJ.png",
+      "photo": "/assets/img/players/corejj.webp",
       "facts": "Support de Team Liquid, champion du monde 2017 avec Samsung Galaxy. L'un des cerveaux les plus respectés du circuit."
     },
     {
@@ -140,7 +140,7 @@
       "country": "Allemagne",
       "team": "G2 Esports",
       "team_slug": "equipe-g2-esports",
-      "photo": "https://static.lolesports.com/players/1768550002850_BrokenBlade-01.png",
+      "photo": "/assets/img/players/brokenblade.webp",
       "facts": "Toplaner de G2 Esports, l'un des toplaners les plus polyvalents d'Europe. Réputé pour sa large gamme de champions."
     }
   ]

@@ -66,8 +66,7 @@ def cover_image_url(page):
 # ---------------------------------------------------------------------------
 def build_nav(nav):
     parts = []
-    home = nav.get("home")
-    parts.append(f'<a class="nav-item" href="{url_for(home["slug"])}">{home["label"]}</a>')
+    # « Accueil » retiré du menu (le logo du header pointe déjà vers l'accueil)
 
     for silo in nav.get("silos", []):
         if silo.get("pages"):
